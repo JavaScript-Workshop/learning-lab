@@ -1,4 +1,4 @@
-# ## 💡 My JavaScript Learning Lab
+💡 My JavaScript Learning Lab
 
 This repository is my personal learning space to showcase my journey in understanding JavaScript. Learning though the resources, Google, Stack Overflow, and through the resources provided by [freeCodeCamp](https://www.freecodecamp.org/), and the Bootcamp I attended [Fullstack Academy](fullstackacademy.com).
 
