@@ -58,3 +58,41 @@ myName = "Vonney";
 
 //Step 6 - console.log now with new value
 console.log(myName); //Vonney
+
+//Step 7
+// log your varibale to the console again
+// define a new value for your variable and console log it
+
+let myNickName = "Davonneizzle";
+console.log(myNickName);
+
+myNickName = "D";
+console.log(myNickName);
+
+//Step 8
+// camelCase
+//declariing varabiables
+
+// let favoriteCharacter;
+
+//Step 9
+//console.log Step 8s variable and see what happens
+
+// console.log(favoriteMovieCharacter); //undefined
+
+//Step 10
+//you can assign a value to an unitinalized variable
+//and then console log it
+
+let favoriateTvShow;
+favoriateTvShow = "The 100";
+console.log(favoriateTvShow);
+
+//Step 11
+// you can assign the value of a varibale to another variable
+
+let one = "uno";
+let two = "dos";
+
+two = one;
+console.log(two);
