@@ -14,9 +14,8 @@ The main goals of this repository are to:
 
 This repository will contain code related to:
 
-- Basic JavaScript concepts (variables, data types, operators, functions, arrays etc.).
+- Basic JavaScript concepts (variables, data types, operators, functions, arrays, hopers, dreams, etc.).
 - JavaScript Algorithms and Data Structures (challenges from freeCodeCamp).
--
 
 ## 📁 Repository Structure
 
@@ -24,4 +23,4 @@ The code will be organized into different folders based on the freeCodeCamp curr
 
 ## 🤝 Contributing
 
-This is primarily a personal learning repository, but if you have suggestions for improvement or notice anuthing funky, feel free to open an issue or pull request! Appreciate constructive feedback.
+This is primarily a personal learning repository, but if you have suggestions for improvement or notice anything funky, feel free to open an issue or pull request! Appreciate constructive feedback.
