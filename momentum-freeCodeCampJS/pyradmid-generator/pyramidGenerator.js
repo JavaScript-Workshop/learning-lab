@@ -95,4 +95,90 @@ let one = "uno";
 let two = "dos";
 
 two = one;
-console.log(two);
+console.log(two); //expected 'uno'
+
+//Step 12
+//declare a variable
+const iKnowThisOne = "This is the vaule of said varibale.";
+console.log(iKnowThisOne);
+
+//Step 13
+// you can decalre a variable
+//you can have a variable with no initalization "with no initail value"
+
+let water = "A Must!";
+let koolAid;
+
+console.log(water); //"A Must!"
+console.log(koolAid); // undefined
+
+//Step 14
+//orta vez
+
+const favoriteThriller = "Scream";
+console.log(favoriteThriller);
+
+//Step 15
+//declare a variable with a number value
+
+const howManyDogsIHave = 5;
+console.log(howManyDogsIHave);
+
+//Step 16
+// you can do math operations in js, + - * % /
+
+let regularWorkHours = 10;
+let met = regularWorkHours + 1;
+console.log(met);
+
+//Step 16 / 17
+//lets do some more
+
+let numberOfNotebooks = 10;
+let numberOfBooks = 20;
+
+let totalBooks = numberOfNotebooks + numberOfBooks;
+console.log(totalBooks);
+
+//
+
+const sisters = 2;
+const brothers = 1;
+
+const mySiblings = `I have ${sisters} sisters and ${brothers} brother.`;
+console.log(mySiblings); //expected I have 2 sisters and 1 brother.
+
+//
+
+let dogFoodPrice = 100;
+let discount = dogFoodPrice - 20;
+console.log(discount); // expected 80
+
+//Step 18
+//Arrays can hold a series of values
+
+//you can have an empty array
+let myArray = [];
+
+//Step 19
+// Arrays are seperated with commas
+
+const myDogs = ["Maryjane", "Roxy", "Lexy", "Coco", "Daisy"];
+console.log(myDogs);
+
+//Step 20
+//bracket notation
+//access what you want in the array using the index of value
+
+let dog1 = myDogs[0];
+console.log(dog1); //expected Maryjane
+
+console.log(myDogs[1]); //expected Roxy
+
+//Step 21
+// Arrays are mutable. Mening you can change the value at an index
+// you can re-assin an element
+
+const favoriteSoda = ["Coke", "Pepsi", "Sprite"];
+favoriteSoda[2] = "Moutain Dew";
+console.log(favoriteSoda); //expected Coke, Pepsi, Mountain Dew
