@@ -182,3 +182,49 @@ console.log(myDogs[1]); //expected Roxy
 const favoriteSoda = ["Coke", "Pepsi", "Sprite"];
 favoriteSoda[2] = "Moutain Dew";
 console.log(favoriteSoda); //expected Coke, Pepsi, Mountain Dew
+
+//Step 22
+//alright so the value changed right, it chaged to Moutain Dew
+//this is called mutation. It mutated lol
+
+//the question is when to mutate an array and when you should not
+
+//you know this one ...
+//.lengh
+//gets the number element in the array
+
+//to get the last one length - 1
+
+//create an array of sodas
+//console log the array, but print the last element in the array
+
+const soda = ["Coke", "Dr.Pepper", "Mr. Pip", "Pepsi"];
+console.log(soda[soda.length - 1]); //get pepsi!
+
+//Step 23
+//review
+
+//create an array
+//get the second element in the array
+
+const candy = ["Twizzlers", "Kit Kat", "Whoopers"];
+console.log(candy[1]); //expected Kit Kat
+
+//Step 24
+//lets do it again but my way
+
+//declare an array of my skills
+//get the last element in the array and change the value thats stored in variable
+
+const skills = [
+  "JavaScript",
+  "React.js",
+  "Git",
+  "Tailwind CSS",
+  "Github",
+  "C#",
+];
+const mySkills = (skills[5] = "Java");
+console.log(mySkills); // expected Java
+
+console.log("My Skills:", skills); //expected array with Java as the last element
