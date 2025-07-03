@@ -285,3 +285,35 @@ console.log("Soft Skills:", softSkills);
 //Step 30
 //be consistent, "" or ""
 //I choose ""
+
+//Step 31
+//the let keywords, means you can change the value
+//the const keyword, is consistent, you cannot change the value
+
+//still review
+
+//Step 32
+//starting project
+
+const player = "#";
+const count = 10;
+const rows = [];
+
+//Step 33
+//loop time = review time
+//for loop
+
+/*
+    for (iterator; condition; iteration) {
+       logic  
+      } 
+  */
+
+//Step 34
+//the iterator is usually i, it controls how the loop iterates through the logic
+
+//Step 35
+//the condition tells the loop how many times it shuld iterate.
+
+//reviewing operators <, > + - etc
+//booleans are true or false
