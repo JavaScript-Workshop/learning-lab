@@ -228,3 +228,60 @@ const mySkills = (skills[5] = "Java");
 console.log(mySkills); // expected Java
 
 console.log("My Skills:", skills); //expected array with Java as the last element
+
+//Step 25
+// lets go !! Next lesson
+
+/*  Hows it going? 
+
+  - Everything is review so far, I know I am further ahead in JavaScript. This good review!
+    Shout out to freeCodeCamp! 
+
+ */
+
+//Step 26
+
+//Methods are part of vaules or objects
+//  .log() is actually a method
+
+//arrays have their own methods
+//like the push method : it pushes a vaule to the end of the array
+
+skills.push("Responsive Web Design");
+console.log(skills);
+
+//Step 27
+//pop() method removes the last element in an array and returns that element
+
+const buildingSkillsIn = skills.pop();
+console.log(buildingSkillsIn); //expected array with returned value responsive web design
+
+//Step 28
+//push() method adds one or more elements to the end of the array
+
+const AI = ["Artificial Inteligence", "LLM", "Agents"];
+const learningAI = AI.push("Generative AI");
+
+console.log(learningAI); //returns the new lengh of the array, not the element you just added
+
+//Step 29
+//know what values a method returns
+
+//another one
+
+const softSkills = ["Leadership"];
+softSkills.push(
+  "Curiosity",
+  "Communication",
+  "Teamwork",
+  "Collaboration",
+  "Coding"
+);
+console.log("Soft Skills:", softSkills);
+
+softSkills.pop(); //remove coding from the array. "removing the last element"
+console.log("Soft Skills:", softSkills);
+
+//Step 30
+//be consistent, "" or ""
+//I choose ""
