@@ -313,7 +313,70 @@ const rows = [];
 //the iterator is usually i, it controls how the loop iterates through the logic
 
 //Step 35
-//the condition tells the loop how many times it shuld iterate.
+//the condition tells the loop how many times it should iterate.
+//the loop will stop when the condtion becomes false
 
 //reviewing operators <, > + - etc
-//booleans are true or false
+//review booleans are true or false
+
+//you for what a for loop is
+
+for (let i = 0; i < count; i++) {
+  // logic
+}
+
+//Step 36
+//the next one is the iteation statement that will tell your loop
+//what to do with the iterator after each iteration
+
+//so we were saying the format is
+
+// for (iteration, condition, iteration) {
+//   logic
+// }
+
+//replace the second iteration that increases i by one
+
+//got it
+//start a for loop at 0
+// i is less than count
+//i, i plus one
+
+// for(let i = 0; i < count; i = i + 1) {
+//   //logic
+// }
+
+//Step 37
+//inside of the body loop, print the value of i iterartor and watch
+const myBills = "#";
+const myCount = 8;
+const myRows = [];
+
+// for (let i = 0; i < count; i = i + 1) {
+//   console.log(i);
+// }
+
+//it counted to 10 , starting at 0 ?
+
+//Copilot said:
+// it adds 1 to i each time
+//it starts at 0 and stops before 10
+//loops start at 0 and go up to but not including the count value
+
+//Step 38
+//replace your console.log with a statement to push i to your rows
+//you know push()
+//rows push i
+
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(i);
+}
+
+//Step 39
+//declare a variable result and assign it to an empty string
+// you know this one
+
+//declare a variable with let
+//its an empty string
+
+let result = "";
