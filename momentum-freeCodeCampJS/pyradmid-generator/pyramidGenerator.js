@@ -370,9 +370,9 @@ const myRows = [];
 //you know push()
 //rows push i
 
-for (let i = 0; i < count; i = i + 1) {
-  rows.push(i);
-}
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(i);
+// }
 
 //Step 39
 //declare a variable result and assign it to an empty string
@@ -444,4 +444,77 @@ for (const row of myRos) {
   console.log(row);
 }
 
+//Step 44
+//time to update the original loop
+//instead of pushing i to the array, push the value of your character
+
+//chage i to character
+//easy
+
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(character); // it was pushing i
+// }
+
+//Step 45
+// i represents the current "row" number in your loop.
+//repeat() method
+
+//define repeat() method:
+// creates a new string repeating the og string a specified number of times
+//but does not change the og string
+//it returns a new string with the repeated value
+
+// ex
+const dreamCompany = "Fast Food/Restraunt Related!";
+console.log("Dream Company:", dreamCompany.repeat(3));
+
+const activity = "Code! ";
+activity.repeat(3);
+
+/*
+  Use the repeat method on your character and give it i for the number
+
+  - repeat method on character and give it an i 
+  */
+
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i));
+}
+
+//Step 46
+//okay lets start a new one just so everything is up to date
+//set the variables, for a character, count, and row
+//loop through the count, i plus 1 so its repeated
+//have your empty array push the character string repeated i + 1
+//console.log it
+
+const myCharacter = "*";
+const myCountNumber = 8;
+const rowNumber = [];
+
+for (let i = 0; i < myCountNumber; i = i + 1) {
+  rowNumber.push(myCharacter.repeat(i + 1));
+}
+
+console.log(rowNumber);
+
 //
+
+//Step 47
+//Oww functions. I like functions
+
+function getTotal(num1, num2) {
+  let total = num1 + num2;
+  return total;
+}
+
+console.log(getTotal(100, 200)); //expected 300
+
+//
+const nightOwl = () => {
+  let night = "at night";
+  let code = `We night owls are productive ${night}!`;
+  console.log(code);
+};
+
+nightOwl();
