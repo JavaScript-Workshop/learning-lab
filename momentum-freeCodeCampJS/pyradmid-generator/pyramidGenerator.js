@@ -273,8 +273,10 @@ const softSkills = ["Leadership"];
 softSkills.push(
   "Curiosity",
   "Communication",
+  "Adapatability",
   "Teamwork",
-  "Collaboration",
+  "Enthusiasm",
+  "Problem Solving",
   "Coding"
 );
 console.log("Soft Skills:", softSkills);
@@ -380,3 +382,66 @@ for (let i = 0; i < count; i = i + 1) {
 //its an empty string
 
 let result = "";
+
+//Step 40
+//log result
+
+// consonle.log(result);
+
+//Step 41
+//for ..of loop
+//define for of loop : used to iterate over the
+//values of an iterarable object, like an array, string,
+//and temporarily asssigns to a varibale
+
+//the syntax looks like this.
+
+// for (const value of iterable) {
+//   //logic
+// }
+
+//the variable only exists for a single interation, not the entire loop
+
+/*
+   Create a for...of loop to iterate through your rows
+   array, assigning each value to a row variable.
+
+   - declare an array with values 
+   - for of loop, using the syntax, I want the row, of rows
+   - empty body they want
+
+  */
+
+// const myRos = ["Row1", "Row2", "Row3"];
+// for (const row of myRos) {
+//   console.log(row); //but I put a console.log =)
+// }
+
+//Step 42
+//you know this. Concatenation.
+// When you add a new string to an existing string to make a single string.
+//Joining together two strings, to be one.
+
+//Use the addtition operator to concatenate the row value to the result value
+//always loved code cause it kinda works backwords
+// it wants the result, concatenate the row value, ok, to the result value
+
+// const myRos = ["Row1", "Row2", "Row3"];
+// for (const row of myRos) {
+//   result = row + result;
+// }
+
+//Step 43
+//specail sequence \n which is interperated as a new line when the string is logged
+//ex. thisExample = thisExample + "\n" + secondExample
+
+//Use a second addtion operator to appened a new line after the result and row values
+//it said after, from the code before, add the \n after the result and row values
+
+const myRos = [1, 2, 3, 4, 5, 6, 7];
+for (const row of myRos) {
+  result = row + result + "\n";
+  console.log(row);
+}
+
+//
