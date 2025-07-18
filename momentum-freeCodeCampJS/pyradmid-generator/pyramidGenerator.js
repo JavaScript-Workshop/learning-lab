@@ -603,4 +603,6 @@ const quailitySleep = (hours) => {
 };
 
 const bestSleepHours = quailitySleep(`You need at least ${8} hours of sleep.`);
-console.log(bestSleepHours);
+console.log(bestSleepHours); // when you pass a value to a function call, that value is refereed to as an argument.
+
+//Step 55
