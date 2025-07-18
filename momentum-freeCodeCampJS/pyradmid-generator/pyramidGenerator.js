@@ -518,3 +518,43 @@ const nightOwl = () => {
 };
 
 nightOwl();
+
+// A function is a block of code that can be reused throught your code
+// You know th syntax function name(parameter) { //logic aka function body}
+
+function letsDoThis(name) {
+  let time = `It is Javascript time ${name}!`;
+  console.log(time);
+}
+
+letsDoThis("Davonne");
+
+//Step 48
+
+//you need to call the function
+//a function call tells your app to run the code from the function
+
+const javaScriptTime = () => {
+  console.log("Lets get into freeCodeCamp Javascript Course!");
+};
+
+javaScriptTime(); //calling the function
+
+//Step 49
+//back to the pyramind
+//declare a function padRow, call it
+
+// *** All Javascript functions return a value, meaning they provides a defined result
+
+// Decalare a call varaible and assign it to your exisisting padRow call to that variable
+function padRow() {}
+
+padRow();
+
+const call = padRow();
+
+//Step 50
+//you can console.log a variable
+
+let duolingoLanuage = "Spanish";
+console.log(duolingoLanuage);
