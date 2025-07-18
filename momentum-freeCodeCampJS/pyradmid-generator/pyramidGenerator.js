@@ -547,14 +547,60 @@ javaScriptTime(); //calling the function
 // *** All Javascript functions return a value, meaning they provides a defined result
 
 // Decalare a call varaible and assign it to your exisisting padRow call to that variable
-function padRow() {}
+// function padRow() {}
 
-padRow();
+// padRow();
 
-const call = padRow();
+// const call = padRow();
 
 //Step 50
 //you can console.log a variable
 
 let duolingoLanuage = "Spanish";
 console.log(duolingoLanuage);
+
+//Step 51
+//by defualt function return undeined as thier value
+//in order to return something you need the return keyword
+
+function favoriteRestruant() {
+  return "Red Lobster";
+}
+
+//Step 52
+//you know about parameters
+//basically a variable that are given a value when you call the function
+//can dynamically change the result of the functions code
+
+const favoriteMovie = (movie) => {
+  console.log(`${movie} is my favorite movie hands down`);
+};
+
+favoriteMovie("HarryPotter");
+favoriteMovie("Lord of The Rings"); // "step 54"
+
+//Step 53
+//a function does not jave to return a hard code value
+//it can also return a stored value in a variable
+//you know this
+
+//change padRow functionto reutn the name pararmeter directly
+
+function padRow(name) {
+  return name;
+}
+
+//Step 54
+// parameters need to be gived a value when you call the functions
+//review. just did this example
+// lets do another one
+// decalre a function that takes hours of sleep and return those hours
+// call the function withith a variable
+//console.log that variable
+
+const quailitySleep = (hours) => {
+  return hours;
+};
+
+const bestSleepHours = quailitySleep(`You need at least ${8} hours of sleep.`);
+console.log(bestSleepHours);
