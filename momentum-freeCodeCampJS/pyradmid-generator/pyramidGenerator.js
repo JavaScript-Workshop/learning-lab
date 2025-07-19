@@ -586,9 +586,9 @@ favoriteMovie("Lord of The Rings"); // "step 54"
 
 //change padRow functionto reutn the name pararmeter directly
 
-function padRow(name) {
-  return name;
-}
+// function padRow(name) {
+//   return name;
+// }
 
 //Step 54
 // parameters need to be gived a value when you call the functions
@@ -606,3 +606,62 @@ const bestSleepHours = quailitySleep(`You need at least ${8} hours of sleep.`);
 console.log(bestSleepHours); // when you pass a value to a function call, that value is refereed to as an argument.
 
 //Step 55
+//Oh you know this one..!
+//you got this
+
+//declare a function addThisUp, that takes two parameters for numbers
+//return the sum of the parameters
+//decalre a variable to call the function with the arguments
+//console.log said variable
+
+const addThisUp = (numero1, numero2) => {
+  return numero1 + numero2;
+};
+
+const sum = addThisUp(20, 40);
+console.log(sum); //expected 60
+
+//
+
+//Step 56
+//erase everything
+// nice, reviewing functions
+
+//Step 57
+//where your variable is declared determines where you can use your code
+//specific scope
+
+//global scope
+// are global
+//variables that are declared outside of any block like a function or a for loop
+
+//when a varibale is global, you can use it in a function to access its value
+
+const rapper = "The Goat";
+
+function bestRapper(name) {
+  return `${rapper}, thee ${name}`;
+}
+
+console.log(bestRapper("Eminem"));
+
+//back to pyramind
+
+//update padRow function to return the character variable to the beginning of the name parameter
+
+function padRow(name) {
+  return character + name;
+}
+
+//Steps 58
+//variables can also be declared inside a function
+//these variables are considered to be local scope or block scope
+
+//if you try to access a variable outside the function, you get an error
+
+//lets try it and get an error
+
+// const didThisWork = () => {
+//   const testing = "Mic check one two, one two";
+// };
+// console.log(testing); //yess it worked!
