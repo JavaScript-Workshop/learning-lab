@@ -709,12 +709,75 @@ console.log(numberOfCustomers());
 //Step 61
 //back to pyramid
 
+// const myCharacter = "*";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// for (let i = 0; i < myCountNumber; i = i + 1) {
+//   davonnesRows.push(myCharacter.repeat(i + 1));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 62
+//pack to your padRow function
+//remove test declaration and return statement
+//make the function empty
+
+function padRow() {} //expected undefined
+
+const call = padRow();
+console.log(call);
+
+//Step 63
+//have an empty pad row function
+//remove console.log(call)
+
+//Step 64
+//need to know how to format a row in padRow function
+//and need to know how many rows in total that are generated
+
+//set two parameters to padRowfunction, for row number and row count
+
+function padRow(rowNumber, rowCount) {}
+
+//Step 65
+//we learned about the retrun keyword
+//it is used to specify a return value
+
+//use the return keyword to return the value of the character variable, repeated rowNumber times
+// function padRow(rowNumber, rowCount) {
+//   return character.repeat(rowNumber);
+// }
+
+//Step 66
+//a function call means you use the function
+//to call a function, reference functions name and ()
+
+// likeThis();
+
+//Step 66 and 67
+//back to pyramid
+
+//replace character.repeat(i + 1) in your push() call with a function for your padRow function
+//easy, i got this one
+
+//step 67
+//add arguments, i + 1 and count to the padRow call
+//got it..! just add the arguments to the function call padRow
+
 const myCharacter = "*";
 const myCountNumber = 8;
 const davonnesRows = [];
 
 for (let i = 0; i < myCountNumber; i = i + 1) {
-  davonnesRows.push(myCharacter.repeat(i + 1));
+  davonnesRows.push(padRow(i + 1, count));
 }
 
 let result = "";
@@ -724,13 +787,3 @@ for (const row of davonnesRows) {
 }
 
 console.log(result);
-
-//Step 62
-//pack to your padRow function
-//remove test declaration and return statement
-//make the function empty
-
-function padRow() {}
-
-const call = padRow();
-console.log(call);
