@@ -381,7 +381,7 @@ const myRows = [];
 //declare a variable with let
 //its an empty string
 
-let result = "";
+// let result = "";
 
 //Step 40
 //log result
@@ -438,11 +438,11 @@ let result = "";
 //Use a second addtion operator to appened a new line after the result and row values
 //it said after, from the code before, add the \n after the result and row values
 
-const myRos = [1, 2, 3, 4, 5, 6, 7];
-for (const row of myRos) {
-  result = row + result + "\n";
-  console.log(row);
-}
+// const myRos = [1, 2, 3, 4, 5, 6, 7];
+// for (const row of myRos) {
+//   result = row + result + "\n";
+//   console.log(row);
+// }
 
 //Step 44
 //time to update the original loop
@@ -488,15 +488,15 @@ for (let i = 0; i < count; i = i + 1) {
 //have your empty array push the character string repeated i + 1
 //console.log it
 
-const myCharacter = "*";
-const myCountNumber = 8;
-const rowNumber = [];
+// const myCharacter = "*";
+// const myCountNumber = 8;
+// const rowNumber = [];
 
-for (let i = 0; i < myCountNumber; i = i + 1) {
-  rowNumber.push(myCharacter.repeat(i + 1));
-}
+// for (let i = 0; i < myCountNumber; i = i + 1) {
+//   rowNumber.push(myCharacter.repeat(i + 1));
+// }
 
-console.log(rowNumber);
+// console.log(rowNumber);
 
 //
 
@@ -653,7 +653,7 @@ function padRow(name) {
   return character + name;
 }
 
-//Steps 58
+// Steps 58
 //variables can also be declared inside a function
 //these variables are considered to be local scope or block scope
 
@@ -665,3 +665,72 @@ function padRow(name) {
 //   const testing = "Mic check one two, one two";
 // };
 // console.log(testing); //yess it worked!
+
+//
+
+//Step 59
+//more local and global variables
+
+//varibales declared inside a function are in a local scope
+// variable outside of a function is global scope, it can be ascced anywhere in your code
+
+//declare a variable in local scope, return it
+const getSoda = () => {
+  const size = "Large"; // 'size' is only available INSIDE getSoda
+  return size;
+};
+
+console.log(getSoda());
+
+//
+
+// declare a variable and assign it the value returned from the function
+const secondStep = getSoda();
+console.log(secondStep);
+
+// console.log(size); // Error: size only exist inside the getSoda function
+
+// Step 60
+
+//interesting
+//In a function or block statement, any code after a return statemnt will not run
+//it stops the executction of the code
+//this is why line 701 is before the return customer1
+
+const numberOfCustomers = () => {
+  const customer1 = "Family of 4";
+  console.log("Seat family at table 15");
+  return customer1;
+  console.log("Seat family of 15"); //does not go here
+};
+
+console.log(numberOfCustomers());
+
+//Step 61
+//back to pyramid
+
+const myCharacter = "*";
+const myCountNumber = 8;
+const davonnesRows = [];
+
+for (let i = 0; i < myCountNumber; i = i + 1) {
+  davonnesRows.push(myCharacter.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of davonnesRows) {
+  result = result + row + "\n";
+}
+
+console.log(result);
+
+//Step 62
+//pack to your padRow function
+//remove test declaration and return statement
+//make the function empty
+
+function padRow() {}
+
+const call = padRow();
+console.log(call);
