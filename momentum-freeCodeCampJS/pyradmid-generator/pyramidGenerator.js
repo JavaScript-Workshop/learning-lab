@@ -958,6 +958,65 @@ console.log(thisExample); //expepected 11
 //have your loop start at 1
 //got it..!
 
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i < myCountNumber; i++) {
+//   davonnesRows.push(padRow(i + 1, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 74
+//pyramid looks funny
+//update first argument your padRow call to be i
+
+//remove 1 from your function
+
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i < myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 75
+//its still off by one
+
+//update your loop to run while i is less then or equal to count
+
 const myWord = "Hello";
 const myCountNumber = 8;
 const davonnesRows = [];
@@ -970,8 +1029,9 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
-for (let i = 1; i < myCountNumber; i++) {
-  davonnesRows.push(padRow(i + 1, myCountNumber));
+for (let i = 1; i <= myCountNumber; i++) {
+  //this line <=
+  davonnesRows.push(padRow(i, myCountNumber));
 }
 
 let result = "";
@@ -981,3 +1041,7 @@ for (const row of davonnesRows) {
 }
 
 console.log(result);
+
+//Step 76
+//leave a comment like this
+//ow we know this
