@@ -858,6 +858,106 @@ console.log(numberOfCustomers());
 //update myWord vaule to be repeated 2 * rowNumber -1
 //look for myWord value, repeat it 2 * rowNumber - 1
 
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 0; i < myCountNumber; i = i + 1) {
+//   davonnesRows.push(padRow(i + 1, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 71
+//the addition operator can also mean shorthand "to take the orignal value of the varibale"
+
+//ex text = test + 1
+//is the same as test += 1;
+
+//update you iteration statement in the for loop
+//oh i know this...
+
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 0; i < myCountNumber; i += 1) {
+//   //this line add i += 1
+//   davonnesRows.push(padRow(i + 1, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 72
+// the increment operator ++
+//this operator increases the value of a variable by 1
+
+//so like
+
+let thisExample = 10;
+thisExample++;
+console.log(thisExample); //expepected 11
+
+//replace your addition assign ment with the increment operator for your loop iteration
+// oh got this again
+
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 0; i < myCountNumber; i++) {
+//   //this line add ++
+//   davonnesRows.push(padRow(i + 1, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 73
+//have your loop start at 1
+//got it..!
+
 const myWord = "Hello";
 const myCountNumber = 8;
 const davonnesRows = [];
@@ -870,7 +970,7 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
-for (let i = 0; i < myCountNumber; i = i + 1) {
+for (let i = 1; i < myCountNumber; i++) {
   davonnesRows.push(padRow(i + 1, myCountNumber));
 }
 
