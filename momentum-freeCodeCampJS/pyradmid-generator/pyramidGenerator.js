@@ -1045,3 +1045,57 @@ console.log(result);
 //Step 76
 //leave a comment like this
 //ow we know this
+
+//Step 77
+//mutiple lines for comments
+
+/*
+
+   just like this 
+
+*/
+
+//Step 78
+//if statments
+
+//if statments allow you to run a block of code only when a
+//condition is met
+
+// if (condtion) {
+//   logic;
+// }
+
+function me(name) {
+  if (name === "Davonne") {
+    console.log(`Hi ${name}`);
+  } else {
+    console.log("hello");
+  }
+}
+
+me("Davonne"); //expected hi davonne
+me("Jasmine"); //expected hello
+
+//Step 79
+//lets do it again
+
+const drinkingAge = 21;
+
+function checkAge(age) {
+  if (age < 21) {
+    console.log("No sorry old enough to drink alcohol ");
+  } else {
+    console.log("Yes you are old enough");
+  }
+}
+
+checkAge(25); //yes
+checkAge(19); //no
+
+//Step 80
+//if statements can also be boolenas
+
+//ex.
+if (true) {
+  console.log("Yes, you are getting sleepy.");
+}
