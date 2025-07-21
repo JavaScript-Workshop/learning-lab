@@ -22,8 +22,8 @@
 //assignment operator
 //assign variable value
 
-let character = "Hello";
-console.log(character);
+// let character = "Hello";
+// console.log(character);
 
 //
 
@@ -477,9 +477,9 @@ activity.repeat(3);
   - repeat method on character and give it an i 
   */
 
-for (let i = 0; i < count; i = i + 1) {
-  rows.push(character.repeat(i));
-}
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(character.repeat(i));
+// }
 
 //Step 46
 //okay lets start a new one just so everything is up to date
@@ -730,10 +730,10 @@ console.log(numberOfCustomers());
 //remove test declaration and return statement
 //make the function empty
 
-function padRow() {} //expected undefined
+// function padRow() {} //expected undefined
 
-const call = padRow();
-console.log(call);
+// const call = padRow();
+// console.log(call);
 
 //Step 63
 //have an empty pad row function
@@ -745,7 +745,8 @@ console.log(call);
 
 //set two parameters to padRowfunction, for row number and row count
 
-function padRow(rowNumber, rowCount) {}
+// function padRow(rowNumber, rowCount) {
+// }
 
 //Step 65
 //we learned about the retrun keyword
@@ -772,12 +773,105 @@ function padRow(rowNumber, rowCount) {}
 //add arguments, i + 1 and count to the padRow call
 //got it..! just add the arguments to the function call padRow
 
-const myCharacter = "*";
+// const myCharacter = "*";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return character.repeat(rowNumber);
+// }
+
+// for (let i = 0; i < myCountNumber; i = i + 1) {
+//   davonnesRows.push(padRow(i + 1, myCount)); //this line, add the atguments i + 1 and myCount
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 68
+//use the addtion opertor to concatenate a single space " "
+// to the beginning and end of the repeated string
+
+// const myCharacter = "*";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return " " + character.repeat(rowNumber) + " "; //this line right here
+// }
+
+// for (let i = 0; i < myCountNumber; i = i + 1) {
+//   davonnesRows.push(padRow(i + 1, myCount)); //this line, add the atguments i + 1 and myCount
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 69
+//From your function padRow, from line 804 - 806
+//update your blank spaces to be repeated rowCount - rowNumber
+
+//this one
+// function padRow(rowNumber, rowCount) {
+//   return " " + character.repeat(rowNumber) + " "; //this line right here
+// }
+
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(rowNumber) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 0; i < myCountNumber; i = i + 1) {
+//   davonnesRows.push(padRow(i + 1, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 70
+// you can pass full expressions as an argument
+
+// like likeThis(2 * 2 + 4); full expressions
+
+//update myWord vaule to be repeated 2 * rowNumber -1
+//look for myWord value, repeat it 2 * rowNumber - 1
+
+const myWord = "Hello";
 const myCountNumber = 8;
 const davonnesRows = [];
 
+function padRow(rowNumber, rowCount) {
+  return (
+    " ".repeat(rowCount - rowNumber) +
+    myWord.repeat(2 * rowNumber - 1) +
+    " ".repeat(rowCount - rowNumber)
+  );
+}
+
 for (let i = 0; i < myCountNumber; i = i + 1) {
-  davonnesRows.push(padRow(i + 1, count));
+  davonnesRows.push(padRow(i + 1, myCountNumber));
 }
 
 let result = "";
