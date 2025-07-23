@@ -1099,3 +1099,79 @@ checkAge(19); //no
 if (true) {
   console.log("Yes, you are getting sleepy.");
 }
+
+if ("false") {
+  console.log("Condtion is true");
+  //"False" is a string, which when evaulated to a boolean becomes true.
+  // This means "false" is a truthy value
+
+  //A truthy value is a value that is considered true when evaluated as a boolean.
+  //Most values in js will be truthy
+
+  //A falsy value is the opposite. A vaule consiidered false when evalulated as a booleen.
+
+  //JS list of falsy values: false, 0, "", null, undefined, and NaN.
+}
+//Step 81
+//change if conditon to an empty ""
+// a faslsy value
+
+if ("") {
+  console.log("This condition is true");
+} //its gone
+
+//Step 82
+//empty strings evaluate to false = falsy value
+
+//oow if/else/else if statements
+//allow you to check multiple conditions
+
+// if (condition1) {
+//   //logic
+// } else if (condtion2) {
+//   //logic
+// } else if (condtion3) {
+//   //logic
+// } else {
+//   //logic
+// }
+
+function myExample(name) {
+  if (name === "Davonne") {
+    console.log("Hey nice to see you D");
+  } else if (name === "Daisy") {
+    console.log("Go to sleep Daisy");
+  } else {
+    console.log("hello");
+  }
+}
+
+myExample("Davonne");
+myExample("Daisy");
+myExample("Edgar");
+
+//Step 83
+//wow just did this
+//you can also add an if block
+
+//this will only evualuate if the conditons
+// in the if and else if blocks are not met.
+
+function sleep(time) {
+  if (time == 12) {
+    console.log("way passed bed time");
+  } else if (time === 11) {
+    console.log("Time for bed");
+  } else {
+    console.log("Way to early for bed");
+  }
+}
+
+sleep(8); //expected "way to early for bed"
+
+//Step 84
+//declare a variable to false
+//declare a variable to 0
+
+let myLoop = false;
+let done = 0;
