@@ -1175,3 +1175,39 @@ sleep(8); //expected "way to early for bed"
 
 let myLoop = false;
 let done = 0;
+
+//Step 85
+//a while loop will run over and over again untill the conditon is no longer true
+
+// while(condtion) {
+//   //logic
+// }
+
+//decalre a while loop with the myLoop variable above
+
+// while (myLoop) {
+
+// }
+
+//Step 86
+//a loop that runs forever is a infinite loop = avoid these
+//an infinaite loop can block our your system requiring a full restart
+
+//use the increment operator to increase the value of done inside the while loop
+
+// while (myLoop) {
+//   done++;
+// }
+
+//Step 87
+//The equlaity operator == is used to check if two values are equal.
+//below done, add an if statemnt to check if done is equal to count
+
+//got it, if statement, if statment, done == myCount
+
+while (myLoop) {
+  done++;
+
+  if (done == myCount) {
+  }
+}
