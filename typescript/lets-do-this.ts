@@ -1,4 +1,8 @@
-//TypeScript -
+// TypeScript -
+
+// All notes, and examples steaming from: https://www.typescriptlang.org/docs/ taking info and putting it into practice
+
+// Other Tools Used: Claude
 
 // ! TypeScript code gets compiled or transpiled into regular JavaScript
 // ! So it can run anywhere JavaScript runs, browsers, Node.js
@@ -119,6 +123,7 @@ let drinkingAge: number = 21;
 console.log(drinkingAge);
 
 let numberOfDog: number = 5;
+
 //Boolean type
 
 let isActive: boolean = true;
@@ -160,55 +165,44 @@ console.log(answer);
 
 //
 const learningTypescript: string = "Learning is a process";
-const persistency: string = "One step at a time";
-console.log(persistency);
+const oneStep: string = "One step at a time";
+console.log(oneStep);
 
 //
-const thanksgiving: string = "Happy thanksgiving";
-const turkey: string = "Happy turkey day";
 
-//
-const experience: string[] = [
-  "Interesting",
-  "Testing my debugging skills",
-  "Testing my knowledge of the terminal",
-  "Focusing on the basics like I did JavaScript",
-  "Researching and Clarification",
+const experienceSoFar: string[] = [
+  "Selftaught, Bootcamp",
+  "Frontend Development",
+  "Building UI projects, Freelancing",
+  "Collaborating",
+  "JavaScript Deep Dive",
+  "React.js 💙 ",
+  "Git",
+  "Tailwind CSS",
+  "Officially TypeScript",
 ];
 
+//dive deeper into: Backend, Java??!
+
+console.log("Davonne:", experienceSoFar);
+
+//otra vez
+//you can also do an array this way. Array<string> syntax
+
+const favoriteColors: Array<string> = ["pink", "black", "green", "purple"];
+console.log("My favorite colors:", favoriteColors);
+
 //
-const bedTime: string[] = ["Time to go to bed"];
-console.log(bedTime);
 
-//Defining Types
-const user = {
-  name: "Davonne",
-  id: 0,
-};
+const favoriteMovies: Array<string> = [
+  "Harry Potter",
+  "Lord of The Rings",
+  "Scream",
+];
+console.log(favoriteMovies);
 
-interface User {
-  name: string;
-  id: number;
-}
+//
 
-//Since JavaScript supports classes and object-oriented programming, so does TypeScript. You can use an interface declaration with classes:
+const needToDos: Array<string> = ["Resume", "Profile", "Fullstack Project"];
 
-interface User {
-  name: string;
-  id: number;
-}
-
-class UserAccount {
-  name: string;
-  id: number;
-
-  constructor(name: string, id: number) {
-    this.name = name;
-    this.id = id;
-  }
-}
-
-interface User {
-  name: string;
-  id: number;
-}
+console.log("A must:", needToDos);

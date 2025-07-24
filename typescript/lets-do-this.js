@@ -1,5 +1,7 @@
 "use strict";
-//TypeScript -
+// TypeScript -
+// All notes, and examples steaming from: https://www.typescriptlang.org/docs/ taking info and putting it into practice
+// Other Tools Used: Claude
 // ! TypeScript code gets compiled or transpiled into regular JavaScript
 // ! So it can run anywhere JavaScript runs, browsers, Node.js
 //  Typescript offers all of JavaScript features
@@ -51,18 +53,17 @@ let placeOfWork = "Amazon";
 //
 let me = "Davonne";
 console.log(typeof me);
-let mySecondLineOfTypeScript =
-  "This is a language being learned in a lot of companies";
+let mySecondLineOfTypeScript = "This is a language being learned in a lot of companies";
 console.log(typeof mySecondLineOfTypeScript); //expect string
 let favoriteColor = "pink";
 console.log(typeof favoriteColor);
 //Array type
 let whereIWantToVisit = [
-  "Rome",
-  "Washington DC",
-  "Japan",
-  "California",
-  "Pennsylvania",
+    "Rome",
+    "Washington DC",
+    "Japan",
+    "California",
+    "Pennsylvania",
 ];
 console.log(typeof whereIWantToVisit);
 //
@@ -104,7 +105,7 @@ console.log(typeof testing123);
 //you can also have an empty unknown
 let thisIsUnknown;
 function addThis(num1, num2) {
-  return num1 + num2;
+    return num1 + num2;
 }
 console.log(addThis(2, 2)); //since the parameters are any type, will return 4
 //Otra vez
@@ -115,30 +116,33 @@ const answer = "yes it did, good job";
 console.log(answer);
 //
 const learningTypescript = "Learning is a process";
-const persistency = "One step at a time";
-console.log(persistency);
+const oneStep = "One step at a time";
+console.log(oneStep);
 //
-const thanksgiving = "Happy thanksgiving";
-const turkey = "Happy turkey day";
-//
-const experience = [
-  "Interesting",
-  "Testing my debugging skills",
-  "Testing my knowledge of the terminal",
-  "Focusing on the basics like I did JavaScript",
-  "Researching and Clarification",
+const experienceSoFar = [
+    "Selftaught, Bootcamp",
+    "Frontend Development",
+    "Building UI projects, Freelancing",
+    "Collaborating",
+    "JavaScript Deep Dive",
+    "React.js 💙 ",
+    "Git",
+    "Tailwind CSS",
+    "Officially TypeScript",
 ];
+//dive deeper into: Backend, Java??!
+console.log("Davonne:", experienceSoFar);
+//otra vez
+//you can also do an array this way. Array<string> syntax
+const favoriteColors = ["pink", "black", "green", "purple"];
+console.log("My favorite colors:", favoriteColors);
 //
-const bedTime = ["Time to go to bed"];
-console.log(bedTime);
-//Defining Types
-const user = {
-  name: "Davonne",
-  id: 0,
-};
-class UserAccount {
-  constructor(name, id) {
-    this.name = name;
-    this.id = id;
-  }
-}
+const favoriteMovies = [
+    "Harry Potter",
+    "Lord of The Rings",
+    "Scream",
+];
+console.log(favoriteMovies);
+//
+const needToDos = ["Resume", "Profile", "Fullstack Project"];
+console.log("A must:", needToDos);
