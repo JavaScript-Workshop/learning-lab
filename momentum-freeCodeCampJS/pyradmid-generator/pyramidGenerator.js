@@ -1017,30 +1017,30 @@ console.log(thisExample); //expepected 11
 
 //update your loop to run while i is less then or equal to count
 
-const myWord = "Hello";
-const myCountNumber = 8;
-const davonnesRows = [];
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
 
-function padRow(rowNumber, rowCount) {
-  return (
-    " ".repeat(rowCount - rowNumber) +
-    myWord.repeat(2 * rowNumber - 1) +
-    " ".repeat(rowCount - rowNumber)
-  );
-}
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
 
-for (let i = 1; i <= myCountNumber; i++) {
-  //this line <=
-  davonnesRows.push(padRow(i, myCountNumber));
-}
+// for (let i = 1; i <= myCountNumber; i++) {
+//   //this line <=
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
 
-let result = "";
+// let result = "";
 
-for (const row of davonnesRows) {
-  result = result + row + "\n";
-}
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
 
-console.log(result);
+// console.log(result);
 
 //Step 76
 //leave a comment like this
@@ -1173,8 +1173,8 @@ sleep(8); //expected "way to early for bed"
 //declare a variable to false
 //declare a variable to 0
 
-let myLoop = false;
-let done = 0;
+// let myLoop = false;
+// let done = 0;
 
 //Step 85
 //a while loop will run over and over again untill the conditon is no longer true
@@ -1205,9 +1205,120 @@ let done = 0;
 
 //got it, if statement, if statment, done == myCount
 
-while (myLoop) {
-  done++;
+// while (myLoop) {
+//   done++;
 
-  if (done == myCount) {
+//   if (done == myCount) {
+//   }
+// }
+
+//Step 88
+//oh you know this one
+//the equlaity operator can lead to some strange behavior
+
+//The strict equliaty operator === is used to check if two values are equal and share the same type.
+
+//more strict
+
+//update done == count to use the strict equlaity operator
+
+// if(done === count) {
+//   //logic
+// }
+
+//Step 89
+//we want the loop to stop executing
+
+//inside your if body, assign the boolean false, to your contineLoop variable
+//easy assign variable to the boolean false
+
+// if (done === count) {
+//  continueLoop = false;
+// }
+
+//Step 90
+//back to the pyramind
+
+//push the result of calling padRow with done and count as the argumnets to your rows array
+
+// const myWord = "Hello";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let continueLoop = true; // Changed to true
+// let done = 0;
+
+// while (continueLoop) {
+//   done++;
+//   davonnesRows.push(padRow(done, myCountNumber)); // Inside the loop, using consistent variable names
+
+//   if (done === myCountNumber) {
+//     continueLoop = false;
+//   }
+// }
+
+// console.log(result);
+
+//Step 91
+//The strict inequlaity operator != allows you to check if two values are not equal, or do not have the same type
+
+//update while loop condition to check if dont is not equal to count
+
+const myWord = "$";
+const myCountNumber = 8;
+const davonnesRows = [];
+
+function padRow(rowNumber, rowCount) {
+  return (
+    " ".repeat(rowCount - rowNumber) +
+    myWord.repeat(2 * rowNumber - 1) +
+    " ".repeat(rowCount - rowNumber)
+  );
+}
+
+for (let i = 1; i <= myCountNumber; i++) {
+  davonnesRows.push(padRow(i, myCountNumber));
+}
+
+let result = "";
+
+for (const row of davonnesRows) {
+  result = result + row + "\n";
+}
+
+console.log(result);
+
+let continueLoop = true; // Changed to true
+let done = 0;
+
+while (done != myCountNumber) {
+  //this line, done is not equal to count
+  done++;
+  davonnesRows.push(padRow(done, myCountNumber)); // Inside the loop, using consistent variable names
+
+  if (done === myCountNumber) {
+    continueLoop = false;
   }
 }
+
+console.log(result);
