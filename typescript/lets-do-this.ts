@@ -2,7 +2,7 @@
 
 // All notes, and examples steaming from: https://www.typescriptlang.org/docs/ taking info and putting it into practice
 
-// Other Tools Used: Claude
+// Other Tools Used: Claude AI
 
 // ! TypeScript code gets compiled or transpiled into regular JavaScript
 // ! So it can run anywhere JavaScript runs, browsers, Node.js
@@ -206,3 +206,22 @@ console.log(favoriteMovies);
 const needToDos: Array<string> = ["Resume", "Profile", "Fullstack Project"];
 
 console.log("A must:", needToDos);
+
+//Why use Types?
+
+//regular JavaScript - what do you see
+
+// function greet(name) {
+//   return "Hello " + name.toUpperCase();
+// }
+// //question: it is underlines
+// //this is a ts file
+
+// console.log(greet("Davonne")); //getting error - name
+// //makes sense, theres no type
+
+function helloThere(name: string): string {
+  return `Hello ${name.toUpperCase()}`;
+}
+
+console.log(helloThere("Davonne007"));
