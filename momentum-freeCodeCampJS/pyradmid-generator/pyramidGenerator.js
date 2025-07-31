@@ -1284,6 +1284,240 @@ sleep(8); //expected "way to early for bed"
 
 //update while loop condition to check if dont is not equal to count
 
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let continueLoop = true; // Changed to true
+// let done = 0;
+
+// while (done != myCountNumber) {
+//   //this line, done is not equal to count
+//   done++;
+//   davonnesRows.push(padRow(done, myCountNumber)); // Inside the loop, using consistent variable names
+
+//   if (done === myCountNumber) {
+//     continueLoop = false;
+//   }
+// }
+
+// console.log(result);
+
+//Step 92
+//you can now remove the if statment since you moved the comparions into the while condition
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let continueLoop = true; // Changed to true
+// let done = 0;
+
+// while (done != myCountNumber) {
+//   done++;
+//   davonnesRows.push(padRow(done, myCountNumber));
+// }
+
+// console.log(result);
+
+//Step 93
+//remove the contine loop variable
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let done = 0;
+
+// while (done != myCountNumber) {
+//   done++;
+//   davonnesRows.push(padRow(done, myCountNumber));
+// }
+
+// console.log(result);
+
+//Step 94
+//its possible to end up with an infinate loop again
+
+//rn you are checking if done is not equal to myCountNumber,
+//if done were to be larger than myCountNumber, it would be loop for days.
+
+//update your loop condition to check if done is less then or equal to count
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let done = 0;
+
+// while (done <= myCountNumber) {
+//   done++;
+//   davonnesRows.push(padRow(done, myCountNumber));
+// }
+
+// console.log(result);
+
+//Step 95
+//arrays have a special length property allowing you to check how many values or elements are in an array.
+//myArray.length method
+
+//update your condition to check if rows.legth is less then myCountNumber
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let done = 0;
+
+// while (rows.length > myCountNumber) {
+//   //this line
+//   done++;
+//   davonnesRows.push(padRow(done, myCountNumber));
+// }
+
+// console.log(result);
+
+//Step 96
+//Replace the done reference in your padRowCall with rows.length + 1
+//easy, go replace the padRow call reference with hthe given rows.length + 1
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+// let done = 0;
+
+// while (rows.length > myCountNumber) {
+//   //this line
+//   done++;
+//   davonnesRows.push(padRow(rows.length + 1, myCountNumber));
+// }
+
+// console.log(result);
+
+//Step 97
+//you no longer need your done variable. Remove the increment operation from you loop and the done declaration
+
 const myWord = "$";
 const myCountNumber = 8;
 const davonnesRows = [];
@@ -1306,19 +1540,8 @@ for (const row of davonnesRows) {
   result = result + row + "\n";
 }
 
-console.log(result);
-
-let continueLoop = true; // Changed to true
-let done = 0;
-
-while (done != myCountNumber) {
-  //this line, done is not equal to count
-  done++;
-  davonnesRows.push(padRow(done, myCountNumber)); // Inside the loop, using consistent variable names
-
-  if (done === myCountNumber) {
-    continueLoop = false;
-  }
+while (rows.length > myCountNumber) {
+  davonnesRows.push(padRow(rows.length + 1, myCountNumber));
 }
 
 console.log(result);
