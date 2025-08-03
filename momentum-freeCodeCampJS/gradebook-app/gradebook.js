@@ -207,3 +207,5 @@ function studentMsg(totalScores, studentScore) {
 }
 
 console.log(studentMsg([60, 80, 80, 60], 90)); //expected 70, and A
+
+//
