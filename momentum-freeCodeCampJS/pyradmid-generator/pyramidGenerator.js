@@ -1518,6 +1518,124 @@ sleep(8); //expected "way to early for bed"
 //Step 97
 //you no longer need your done variable. Remove the increment operation from you loop and the done declaration
 
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// while (rows.length > myCountNumber) {
+//   davonnesRows.push(padRow(rows.length + 1, myCountNumber));
+// }
+
+// console.log(result);
+
+//Step 98
+
+//Multi line comments
+
+/* 
+   Are like this 
+   Where you can do comments on mutiple lines
+   Just like this
+
+*/
+
+//Step 99
+
+//What if we made the pyramdid upside down ?
+
+//Write a new for loop, that declares your iterator i and assign the value of count,
+// and use a boolean false, for the condition and iteration statement
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// // while (rows.length > myCountNumber) {
+// //   davonnesRows.push(padRow(rows.length + 1, myCountNumber));
+// // }
+
+// //right here Step 99
+// for (let i = myCountNumber; false; false);
+// console.log(result);
+
+//Step 100
+//loop in the opposite direction
+//your loop needs to run while i > greater than 0
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// //right here Step 100
+// //set your loops condition to run when i is greater than 0
+// for (let i = myCountNumber; i > 0; false);
+// console.log(result);
+
+//Step 101
+//the iteration statment is going to be different
+
+//remeber the syntax for for loop
+
+// for (iteration, condition, iteration) {
+//   logic
+// }
+
+// insteading of adding 1, you gotta subtract it
+
 const myWord = "$";
 const myCountNumber = 8;
 const davonnesRows = [];
@@ -1540,8 +1658,7 @@ for (const row of davonnesRows) {
   result = result + row + "\n";
 }
 
-while (rows.length > myCountNumber) {
-  davonnesRows.push(padRow(rows.length + 1, myCountNumber));
-}
-
+//right here Step 101
+//update the iteration
+for (let i = myCountNumber; i > 0; i = i - 1);
 console.log(result);

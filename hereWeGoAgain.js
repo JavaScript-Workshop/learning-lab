@@ -160,7 +160,7 @@ console.log(filterDrinksLongerThanFour);
 
 //
 
-//array prototype forEach
+//array method forEach
 //a callback function
 // A function to execute for each element in the array.
 
@@ -383,6 +383,8 @@ function getSum(num1, num2) {
 }
 
 console.log(getSum(8, 5));
+
+//Array Method Reduce
 
 //Function declaration
 //start with the function keyword
