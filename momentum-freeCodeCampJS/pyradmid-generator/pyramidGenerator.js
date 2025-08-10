@@ -1636,6 +1636,98 @@ sleep(8); //expected "way to early for bed"
 
 // insteading of adding 1, you gotta subtract it
 
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= myCountNumber; i++) {
+//   davonnesRows.push(padRow(i, myCountNumber));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// //right here Step 101
+// //update the iteration
+// for (let i = myCountNumber; i > 0; i = i - 1);
+// console.log(result);
+
+//Step 102
+
+//With the same exact for loop we have been working on
+//But now push the result of calling padRow with your i and count variables to your rows array
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// // for (let i = 1; i <= myCountNumber; i++) {
+// //   davonnesRows.push(padRow(i, myCountNumber));
+// // }
+
+// //right here Step 102
+// //But now push the result of calling padRow with your i and count variables to your rows array
+// for (let i = myCountNumber; i > 0; i = i - 1) {
+//   davonnesRows.push(padRow(i, count));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 103
+
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// //right here Step 103
+// //replace iteration statement using the ubstaction assignment operator
+// for (let i = myCountNumber; i > 0; i = i - 1) {
+//   davonnesRows.push(padRow(i, count));
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 104
+
 const myWord = "$";
 const myCountNumber = 8;
 const davonnesRows = [];
@@ -1648,8 +1740,12 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
-for (let i = 1; i <= myCountNumber; i++) {
-  davonnesRows.push(padRow(i, myCountNumber));
+//right here Step 104
+//oh you know this one...!
+//use the decrement operator --
+
+for (let i = myCountNumber; i > 0; i--) {
+  davonnesRows.push(padRow(i, count));
 }
 
 let result = "";
@@ -1658,7 +1754,4 @@ for (const row of davonnesRows) {
   result = result + row + "\n";
 }
 
-//right here Step 101
-//update the iteration
-for (let i = myCountNumber; i > 0; i = i - 1);
 console.log(result);
