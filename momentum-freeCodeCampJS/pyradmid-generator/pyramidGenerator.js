@@ -1728,30 +1728,114 @@ sleep(8); //expected "way to early for bed"
 
 //Step 104
 
-const myWord = "$";
-const myCountNumber = 8;
-const davonnesRows = [];
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
 
-function padRow(rowNumber, rowCount) {
-  return (
-    " ".repeat(rowCount - rowNumber) +
-    myWord.repeat(2 * rowNumber - 1) +
-    " ".repeat(rowCount - rowNumber)
-  );
-}
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
 
-//right here Step 104
-//oh you know this one...!
-//use the decrement operator --
+// //right here Step 104
+// //oh you know this one...!
+// //use the decrement operator --
 
-for (let i = myCountNumber; i > 0; i--) {
-  davonnesRows.push(padRow(i, count));
-}
+// for (let i = myCountNumber; i > 0; i--) {
+//   davonnesRows.push(padRow(i, count));
+// }
 
-let result = "";
+// let result = "";
 
-for (const row of davonnesRows) {
-  result = result + row + "\n";
-}
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
 
-console.log(result);
+// console.log(result);
+
+// Step 105
+
+/*
+  mutli line comment, comment out for loop 
+*/
+
+//Step 106
+//you can invert the pyrmaid without needing to loop backwards
+//array methods
+
+//delare an variable
+//assign variable to an array with 3 numbers;
+
+//oh got it!
+const numbers = [1, 2, 3];
+console.log(numbers);
+
+//Step 107
+
+//some array methods unshift(), push();
+
+//the unshift() method of an array - adds a value to the beginning
+//unshift -  will return the new length of the array it was called on  //like the length of it
+//push() - adds a value to the end of the array
+
+/*
+
+Use const to declare an unshifted variable, and assign it the
+result of calling .unshift() on your numbers array. Pass 5 
+as the argument. Then print your unshifted variable.
+
+*/
+//declare a variable and unshift it, as 5 as the argumnet
+//console.log
+
+const myNumbers = [1, 2, 3];
+const unshiftedVariable = myNumbers.unshift(5);
+console.log(unshiftedVariable); //shows the length
+
+//Step 108
+
+//More array methods
+//arrays also have the .shift() method
+//shift() removes the first element in the array
+
+//pop() - removes the last element in the array
+
+//decalre a variable
+//asign it the result of calling the shift() on the array
+
+const myFavoriteNumber = [10, 20, 30];
+const removesTheFirstElement = myFavoriteNumber.shift();
+console.log(removesTheFirstElement); //expected 20, 30 //it shows that number tho?? // i guess its 10
+//
+
+// //the pyramid
+// const myWord = "$";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// //right here Step 105
+// //oh you know this one...!
+// //use the decrement operator --
+
+// /* for (let i = myCountNumber; i > 0; i--) {
+//  davonnesRows.push(padRow(i, count));
+// // */
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
