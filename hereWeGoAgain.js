@@ -1860,3 +1860,38 @@ console.log(doYouPlayTheTheremin("suns")); //true
 console.log(doYouPlayTheTheremin("coding")); // false
 
 //
+
+//An inverted pyramid -
+
+const myWord = "☺️";
+const myCountNumber = 8;
+const davonnesRows = [];
+
+function padRow(rowNumber, rowCount) {
+  return (
+    " ".repeat(rowCount - rowNumber) +
+    myWord.repeat(2 * rowNumber - 1) +
+    " ".repeat(rowCount - rowNumber)
+  );
+}
+
+//Step 111 Right here
+//update the loop to add new rows to the beginning of the array
+for (let i = 1; i <= count; i++) {
+  davonnesRows.unshift(padRow(i, count)); //wow
+}
+
+//comment out for now
+//this for loop makes it interverted
+/* for (let i = myCountNumber; i > 0; i--) {
+   davonnesRows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of davonnesRows) {
+  result = result + row + "\n";
+}
+
+console.log(result);

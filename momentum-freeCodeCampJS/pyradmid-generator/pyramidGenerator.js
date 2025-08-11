@@ -1811,8 +1811,17 @@ const removesTheFirstElement = myFavoriteNumber.shift();
 console.log(removesTheFirstElement); //expected 20, 30 //it shows that number tho?? // i guess its 10
 //
 
-// //the pyramid
-// const myWord = "$";
+//Step 109
+
+//Back to the pyrmaid!!
+
+//Step 110
+//Uncomment = uncommet the for code..!
+
+//Step 111
+
+//the pyramid
+// const myWord = "☺️";
 // const myCountNumber = 8;
 // const davonnesRows = [];
 
@@ -1824,13 +1833,18 @@ console.log(removesTheFirstElement); //expected 20, 30 //it shows that number th
 //   );
 // }
 
-// //right here Step 105
-// //oh you know this one...!
-// //use the decrement operator --
+// //Step 111 Right here
+// //update the loop to add new rows to the beginning of the array
+// for (let i = 1; i <= count; i++) {
+//   davonnesRows.unshift(padRow(i, count)); //wow
+// }
 
+// //comment out for now
+// //this for loop makes it interverted
 // /* for (let i = myCountNumber; i > 0; i--) {
-//  davonnesRows.push(padRow(i, count));
-// // */
+//    davonnesRows.push(padRow(i, count));
+// }
+// */
 
 // let result = "";
 
@@ -1839,3 +1853,48 @@ console.log(removesTheFirstElement); //expected 20, 30 //it shows that number th
 // }
 
 // console.log(result);
+
+//Step 112
+
+const myWord = "☺️";
+const myCountNumber = 8;
+const davonnesRows = [];
+
+//Step 112 right here
+//create a variable that has the value of true
+
+const inverted = true;
+
+function padRow(rowNumber, rowCount) {
+  return (
+    " ".repeat(rowCount - rowNumber) +
+    myWord.repeat(2 * rowNumber - 1) +
+    " ".repeat(rowCount - rowNumber)
+  );
+}
+
+//Step 113 right here
+//create an if statment if inverted is true
+for (let i = 1; i <= count; i++) {
+  //Step 114
+  //move the unshift method into the if statement
+  if (inverted) {
+    davonnesRows.unshift(padRow(i, count));
+  }
+}
+
+//comment out for now
+//this for loop makes it interverted
+
+/* for (let i = myCountNumber; i > 0; i--) {
+   davonnesRows.push(padRow(i, count));
+}
+*/
+
+let result = "";
+
+for (const row of davonnesRows) {
+  result = result + row + "\n";
+}
+
+console.log(result);
