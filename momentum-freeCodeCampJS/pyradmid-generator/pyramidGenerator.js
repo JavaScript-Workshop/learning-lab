@@ -1856,14 +1856,173 @@ console.log(removesTheFirstElement); //expected 20, 30 //it shows that number th
 
 //Step 112
 
-const myWord = "☺️";
-const myCountNumber = 8;
+// const myWord = "☺️";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// //Step 112 right here
+// //create a variable that has the value of true
+
+// const inverted = true;
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// //Step 113 right here
+// //create an if statment if inverted is true
+// for (let i = 1; i <= count; i++) {
+//   //Step 114
+//   //move the unshift method into the if statement
+//   if (inverted) {
+//     davonnesRows.unshift(padRow(i, count));
+//   }
+// }
+
+// //comment out for now
+// //this for loop makes it interverted
+
+// /* for (let i = myCountNumber; i > 0; i--) {
+//    davonnesRows.push(padRow(i, count));
+// }
+// */
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 115
+//Add else block to your block if block
+
+// const myWord = "☺️";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// const inverted = true;
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// //Step 113  and 14 right here
+// //create an if statment if inverted is true
+// for (let i = 1; i <= count; i++) {
+//   if (inverted) {
+//     davonnesRows.unshift(padRow(i, count));
+//   }
+// }
+
+// //comment out for now
+// //this for loop makes it interverted
+
+// /* for (let i = myCountNumber; i > 0; i--) {
+//    davonnesRows.push(padRow(i, count));
+// }
+// */
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 116
+//When inverted is false, you want to build a standard pyramid
+
+//so an else to my if statment
+
+// const myWord = "☺️";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// const inverted = true; //now change to false and see magic
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= count; i++) {
+//   if (inverted) {
+//     davonnesRows.unshift(padRow(i, count));
+//   } else {
+//     davonnesRows.push(padRow(i, count));
+//   }
+// }
+
+// //comment out for now
+// //this for loop makes it interverted
+
+// /* for (let i = myCountNumber; i > 0; i--) {
+//    davonnesRows.push(padRow(i, count));
+// }
+// */
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 117 remove all comments from the pyramid ...!
+
+// const myWord = "☺️";
+// const myCountNumber = 8;
+// const davonnesRows = [];
+
+// const inverted = true; //now change to false and see magic
+
+// function padRow(rowNumber, rowCount) {
+//   return (
+//     " ".repeat(rowCount - rowNumber) +
+//     myWord.repeat(2 * rowNumber - 1) +
+//     " ".repeat(rowCount - rowNumber)
+//   );
+// }
+
+// for (let i = 1; i <= count; i++) {
+//   if (inverted) {
+//     davonnesRows.unshift(padRow(i, count));
+//   } else {
+//     davonnesRows.push(padRow(i, count));
+//   }
+// }
+
+// let result = "";
+
+// for (const row of davonnesRows) {
+//   result = result + row + "\n";
+// }
+
+// console.log(result);
+
+//Step 118 it is finished. Ya did it ..!
+//Lets change things now ..!
+
+const myWord = "😎";
+const myCountNumber = 10;
 const davonnesRows = [];
 
-//Step 112 right here
-//create a variable that has the value of true
-
-const inverted = true;
+const inverted = true; //now change to false and see magic
 
 function padRow(rowNumber, rowCount) {
   return (
@@ -1873,23 +2032,13 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
-//Step 113 right here
-//create an if statment if inverted is true
 for (let i = 1; i <= count; i++) {
-  //Step 114
-  //move the unshift method into the if statement
   if (inverted) {
     davonnesRows.unshift(padRow(i, count));
+  } else {
+    davonnesRows.push(padRow(i, count));
   }
 }
-
-//comment out for now
-//this for loop makes it interverted
-
-/* for (let i = myCountNumber; i > 0; i--) {
-   davonnesRows.push(padRow(i, count));
-}
-*/
 
 let result = "";
 

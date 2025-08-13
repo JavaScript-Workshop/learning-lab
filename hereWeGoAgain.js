@@ -1895,3 +1895,32 @@ for (const row of davonnesRows) {
 }
 
 console.log(result);
+
+//
+/* wowzers line 1900! 
+
+  This is my code for doing 
+  examples from freeCode Camp JavaScript concepts
+  
+ */
+
+//everything is review so far, comments, for loops, while loops,
+//variables/arrays/objects/array methods
+
+//but can you do more things
+
+//you know if statements / else
+
+/* 
+
+  push() - 
+  pop() - 
+  unshift() - 
+  shift() - 
+  splice() - 
+  slice() - 
+  concat() - 
+  indexOf() - 
+  includes() - 
+
+*/
