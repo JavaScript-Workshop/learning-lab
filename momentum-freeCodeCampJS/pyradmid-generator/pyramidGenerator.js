@@ -2018,11 +2018,11 @@ console.log(removesTheFirstElement); //expected 20, 30 //it shows that number th
 //Step 118 it is finished. Ya did it ..!
 //Lets change things now ..!
 
-const myWord = "😎";
+const myWord = "🫡";
 const myCountNumber = 10;
 const davonnesRows = [];
 
-const inverted = true; //now change to false and see magic
+const inverted = false; //now change to false and see magic
 
 function padRow(rowNumber, rowCount) {
   return (
