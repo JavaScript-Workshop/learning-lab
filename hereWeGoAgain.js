@@ -1899,9 +1899,8 @@ console.log(result);
 //
 /* wowzers line 1900! 
 
-  This is my code for doing 
-  examples from freeCode Camp JavaScript concepts
-  
+  So I got into freeCodeCamp JavaScript Data Strictures And Algorithms 
+
  */
 
 //everything is review so far, comments, for loops, while loops,
@@ -1924,3 +1923,5 @@ console.log(result);
   includes() - 
 
 */
+
+// What is Array()?
