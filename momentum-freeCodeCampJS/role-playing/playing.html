@@ -3,14 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>RGB - Mosquito Repeller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="mosquitoStyles.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
   <body>
-    <section class="flex flex col justify-center items-center">
-      <h1 class="font-mono text-4xl">RGB - Mosquito Repeller</h1>
+    <section class="flex flex col justify-center items-center mt-10">
+      <h1 class="text-4xl">RGB - Mosquito Repeller</h1>
     </section>
-    <div id="game"></div>
+    <div id="game" class="flex flex-col justify-center items-center mt-10">
+      <h2 class="text-2xl">Lets Go..!</h2>
+      <div id="stats"></div>
+      <div id="controls"></div>
+      <div id="monsterStats"></div>
+      <div id="text"></div>
+    </div>
     <script src="mosquitoJS.js"></script>
   </body>
 </html>
