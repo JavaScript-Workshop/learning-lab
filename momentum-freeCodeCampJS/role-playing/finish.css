@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-family: "Passero One", sans-serif;
+}
+
+h2 {
+  font-family: monospace;
+}
+
+button {
+  font-family: "Passero One", sans-serif;
+  padding: 2px;
+  font-size: 20pt;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}

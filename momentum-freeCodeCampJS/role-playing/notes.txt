@@ -1,0 +1,5 @@
+//DOM is a tree of objects that represents the HTML
+
+//querySelector() - uses the CSS selector as an argument that returns that element
+//getElementById() 
+//getElementByTagName()
