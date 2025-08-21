@@ -30,5 +30,9 @@ let inventory = ["nunchucks"];
 //question 15
 //create a querySelector for button1
 //nice you already did question 16, have js script at the end of the body tag
+//question 17, declare button one with a const variable
+//question 18, get two more button elements with query selector
 
-let button1 = document.querySelector("#button1");
+const button1 = document.querySelector("#button1");
+const button2 = document.querySelector("#button2");
+const button3 = document.querySelector("#button3");
