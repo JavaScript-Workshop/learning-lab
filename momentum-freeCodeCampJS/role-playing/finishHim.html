@@ -16,20 +16,19 @@
   <body>
     <section class="flex flex col justify-center items-center py-20">
       <div class="flex flex-col justify-center items-center max-w-5xl">
-        <h1 class="text-5xl underline">Build a Role Playing Game</h1>
+       <h1 class=text-4xl lg:text-5xl underline text-">Code Kai vs Miyagi-Dev Fan Code Role Playing Game</h1>
             
         <div id="game" class="text-white mt-4" >
-          <h2 class="text-4xl my-4">Code Kai vs Miyagi-Dev Fan Code</h2>
-         
-          <!-- step 13 -->
-          <div id="stats" class=" text-white text-2xl font-mono">
+      
+             <!-- step 13 -->
+          <div id="stats" class=" text-white text-2xl font-mono border-2 border-white p-2">
             <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
             <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
             <span class="stat">Gold: <strong><span id="goldText">50<span></strong><span>
          </div>
         
         <!-- step 14 -->
-        <div id="controls" class="my-8 flex gap-8">
+        <div id="controls" class="my-8 border-2 border-white p-2 flex gap-8">
             <button id="button1" class="hover:scale-105">Go back home</button>
             <button id="button2" class="hover:scale-105" >Go to Dojo</button>
             <button id="button3" class="hover:scale-105">Fight LaRusso</button>
@@ -39,36 +38,43 @@
       <div id="cobraStats" class="font-mono text-2xl text-white"> 
         <!-- step 19 -->
         <span class="stat">
-          Cobra Name: <strong><span id="monsterName"></span></strong>
+          Code Kai Name: <strong><span id="codeName"></span></strong>
 
         </span>
-
+      
         <span class="stat">
-          Health: <strong><span id="monsterHealth"></span></strong>
+          Health: <strong><span id="codeHealth"></span></strong>
         </span>
 
       </div>
-      <div id="text" class="font-mono text-white text-xl mt-8 p-4 max-w-">
-        Welcome to the face between Code Kai Davonne and Miyagi-Dev Lexy. Code Kai is defending the title, while Miyagi-Dev is trying to save the town from no mercy. You are team Miyagi-Dev! You must defeat Code Kai! Use the buttons above to where you want to go.
+      <div id="text" class="font-mono bg-white p-2 rounded text-xl mt-8 p-4 max-w-3xl"> <!--step 20, 21,22,23,24 are text and all css but I did my own -->
+        Welcome to the face between Code Kai Davonne and Miyagi-Dev Lexy. Code Kai is defending the title, while Miyagi-Dev is trying to save the town from no mercy. You are team Code-Kai! You must defend Code Kais title! Use the buttons above to where you want to go.
       </div>
-
-      <iframe
-        src="https://giphy.com/embed/QadP1JvgEkqfm1aRXF"
-        width="480"
-        class="rounded-3xl mx-auto"
-        height="480"
-        frameborder="0"
-        class="giphy-embed"
-        allowfullscreen
-      ></iframe>
-      <p class="mt-8">
-        <a
-        class="text-white font-mono"
-          href="https://giphy.com/gifs/netflix-cobra-kai-on-netflix-QadP1JvgEkqfm1aRXF"
-          >Here’s a fun Cobra Kai GIF because it fits the vibe 🥋🔥 via GIPHY</a
-        >
-      </p>
+<div class="flex flex-col md:flex-row gap-2">
+  
+        <div class="flex flex-col">
+          <iframe
+            src="https://giphy.com/embed/QadP1JvgEkqfm1aRXF"
+            width="480"
+            class="rounded-3xl mx-auto py-8"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p class="mt-8 w-80 mx-auto">
+            <a
+            class="text-white font-mono"
+              href="https://giphy.com/gifs/netflix-cobra-kai-on-netflix-QadP1JvgEkqfm1aRXF"
+              >Here’s a fun Cobra Kai GIF because it fits the vibe 🥋🔥 via GIPHY</a
+            >
+          </p>
+        </div>
+         <img src="./lexy.png" alt="Lexy in Miyagi-Dev"
+      class="w-80 h-80 py-8 mx-auto"/>
+</div>
     </div>
     <script src="finishHim.js"></script>
+   
   </body>
 </html>
