@@ -44,3 +44,19 @@ const bugBoost = document.querySelector("#bugBoost");
 const codeStats = document.querySelector("#codeStats");
 const codeName = document.querySelector("codeName");
 const codeHealthText = document.querySelector("codeHealth");
+
+//go to the store
+
+const goToStore = () => {
+  console.log("Go to la tienda");
+};
+
+//go to the dojo
+const goToDojo = () => {
+  console.log("Go to the dojo");
+};
+
+//fight lex luther
+const fightLexLuther = () => {
+  console.log("I dare you.");
+};
