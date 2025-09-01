@@ -47,8 +47,10 @@ const codeHealthText = document.querySelector("codeHealth");
 
 //go to the store
 
-const goToStore = () => {
-  console.log("Go to la tienda");
+const goHome = () => {
+  button1.innerText = "Comprar diez health boost!! 10 kata";
+  button2.innerText = "Buy self defense boost!! 30 kata";
+  button3.innerText = "Go to town square";
 };
 
 //go to the dojo
@@ -60,3 +62,7 @@ const goToDojo = () => {
 const fightLexLuther = () => {
   console.log("I dare you.");
 };
+
+button1.onclick = goHome;
+button2.onclick = goToDojo;
+button3.onclick = fightLexLuther;

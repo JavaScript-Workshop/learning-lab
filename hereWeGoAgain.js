@@ -1922,6 +1922,22 @@ console.log(result);
   indexOf() - 
   includes() - 
 
+
 */
 
 // What is Array()?
+//is the Array constructor - its a built in function that you can use to create arrays
+
+let myArrayConstructor = new Array(2, 4, 6, 8);
+console.log(myArrayConstructor, "Who do we appreciate..!");
+
+//You know you can access properties in Javascript multiple ways
+
+// dot notation
+// button.onClick = myFunction;
+
+//when the button is clicked the myFunction will be called
+
+//remember this in html and javascript / DOM
+// button1.innerText =
+//   "This would change the inner text of said button or whatever your doing.";
