@@ -54,11 +54,12 @@ const goToCamp = () => {
   button3.onclick = goToCamp;
 
   text.innerText =
-    "You have entered into the training camp!! Do you see a button that says Go to la casa?";
+    'You have entered into the training camp!! Do you see a button that says Go to la "casa".';
 };
 
 const goHome = () => {
   button1.innerText = "Comprar diez health boost!! 10 kata";
+  console.log("la casa");
   button1.onclick = buyBoost;
   button2.innerText = "Buy self defense boost!! 30 kata";
   button2.onclick = buyDefense;
@@ -68,7 +69,7 @@ const goHome = () => {
   text.innerText = "You have entered la casa!!";
 };
 
-//functions
+//functions, you know these,
 //go to the dojo
 const goToTrainingCamp = () => {
   console.log("Go to training camp");
