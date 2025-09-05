@@ -91,3 +91,9 @@ button3.onclick = fightLexLuther;
 const updateThis = (location) => {
   //
 };
+
+const locations = [
+  {
+    name: "la casa",
+  },
+];
