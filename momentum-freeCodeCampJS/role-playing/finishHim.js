@@ -87,3 +87,7 @@ const buyDefense = () => {};
 button1.onclick = goHome;
 button2.onclick = goToTrainingCamp;
 button3.onclick = fightLexLuther;
+
+const updateThis = (location) => {
+  //
+};

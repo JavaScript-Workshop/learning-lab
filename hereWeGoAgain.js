@@ -1377,11 +1377,11 @@ class GamePlan {
 }
 
 const gamePlan15 = new GamePlan(
-  "React",
+  "React, Backend,",
   "React Hooks",
   "React is it",
-  "Docs, Videos, Courses, Peers",
-  "Java"
+  "Docs, Courses, Peers",
+  " What is Java?"
 );
 console.log(gamePlan15);
 
@@ -1931,13 +1931,24 @@ console.log(result);
 let myArrayConstructor = new Array(2, 4, 6, 8);
 console.log(myArrayConstructor, "Who do we appreciate..!");
 
-//You know you can access properties in Javascript multiple ways
+let myNumbers = new Array(5).fill(0).map((_, index) => index + 1);
 
-// dot notation
-// button.onClick = myFunction;
+console.log(myNumbers);
 
-//when the button is clicked the myFunction will be called
+//
+let giveMeAGrid = new Array(3).fill(null).map(() => new Array(3).fill(0));
 
-//remember this in html and javascript / DOM
-// button1.innerText =
-//   "This would change the inner text of said button or whatever your doing.";
+console.log(giveMeAGrid);
+
+console.log("Necesito café");
+
+//Even more review!!!
+//Oh we know objects...!
+
+/*
+
+- Objects are important data type in Javascript 
+
+
+
+*/
