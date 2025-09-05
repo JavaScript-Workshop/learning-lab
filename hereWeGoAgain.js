@@ -1947,8 +1947,59 @@ console.log("Necesito café");
 
 /*
 
-- Objects are important data type in Javascript 
+- Objects are important data type in Javascript
+- Objects are non-primitive data types that store key value pairs
+- Non-primitive types are mutable 
+- Mutable means that the data can be changed after its created!
 
-
-
+- Properties consist with the key value pairs
+- The key is the name of the property and the value is the data stored in that property
 */
+
+// const favoriteScaryMovieCharacters = {
+//   movie1: "Scream", //key movie1 (property name), scream is the value of the property
+//   movie2: "Final Destination",
+//   movie3: "Chucky",
+//   movie4: "Freddy Kruger",
+//   movie5: "Micheal Myers",
+// };
+
+// console.log("My Halloween Favs", favoriteScaryMovieCharacters);
+
+//wow did not know this
+//if your property has a space in it, you need to use quotes around them
+//if you don't do this, it throws an error
+
+const brand = {
+  "My Brand": "nostalgia",
+};
+
+//how do you access a property in an object ?
+// you know this, dot notion
+
+// object.property
+
+const favoriteScaryMovieCharacters = {
+  movie1: "Scream", //key movie1 (property name), scream is the value of the property
+  movie2: "Final Destination",
+  movie3: "Chucky",
+  movie4: "Freddy Kruger",
+  movie5: "Micheal Myers",
+};
+
+console.log("My Halloween Favs", favoriteScaryMovieCharacters);
+console.log(favoriteScaryMovieCharacters.movie1); //expected Scream
+
+//you can also access properties using bracket notation
+
+//objectName=["property name here"]
+
+const disneyFavHalloweenMovies = {
+  "Movie #1": "Halloweentown",
+  "Movie #2": "Don't look under the bed",
+};
+
+console.log(disneyFavHalloweenMovies["Movie #1"]);
+
+//otra vez
+console.log(disneyFavHalloweenMovies["Movie #2"]);
