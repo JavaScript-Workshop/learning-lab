@@ -95,5 +95,8 @@ const updateThis = (location) => {
 const locations = [
   {
     name: "la casa",
+    "button text": ["Go to la casa", "Go to Camp", "Fight Lex Luther"],
+    "button functions": [goHome, goToTrainingCamp, fightLexLuther],
+    text: 'You have entered into the training camp!! Do you see a button that says Go to la "casa".',
   },
 ];

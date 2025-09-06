@@ -2003,3 +2003,12 @@ console.log(disneyFavHalloweenMovies["Movie #1"]);
 
 //otra vez
 console.log(disneyFavHalloweenMovies["Movie #2"]);
+
+//if you have an object that has a property with a space you put in quotes
+
+const getAJob = [
+  {
+    research: "jobs",
+    "have a strategy": [],
+  },
+];
