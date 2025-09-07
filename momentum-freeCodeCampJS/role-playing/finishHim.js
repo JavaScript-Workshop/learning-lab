@@ -46,28 +46,10 @@ const codeName = document.querySelector("codeName");
 const codeHealthText = document.querySelector("codeHealth");
 
 const goToCamp = () => {
-  button1.innerText = "Go to la casa!!";
-  button1.onclick = goHome;
-  button2.innerText = "Go to camp";
-  button2.onclick = goToTrainingCamp;
-  button3.innerText = "Fight Lex Luther";
-  button3.onclick = goToCamp;
-
-  text.innerText =
-    'You have entered into the training camp!! Do you see a button that says Go to la "casa".';
+  updateThis(locations[0]); //bracket notation
 };
 
-const goHome = () => {
-  button1.innerText = "Comprar diez health boost!! 10 kata";
-  console.log("la casa");
-  button1.onclick = buyBoost;
-  button2.innerText = "Buy self defense boost!! 30 kata";
-  button2.onclick = buyDefense;
-  button3.innerText = "Go to training camp";
-  button3.onclick = goToCamp;
-
-  text.innerText = "You have entered la casa!!";
-};
+const goHome = () => {};
 
 //functions, you know these,
 //go to the dojo
@@ -89,14 +71,32 @@ button2.onclick = goToTrainingCamp;
 button3.onclick = fightLexLuther;
 
 const updateThis = (location) => {
-  //
+  button1.innerText = location["button text"];
+  button1.onclick = goHome;
+  button2.innerText = "Go to camp";
+  button2.onclick = goToTrainingCamp;
+  button3.innerText = "Fight Lex Luther";
+  button3.onclick = goToCamp;
+
+  text.innerText =
+    'You have entered into the training camp!! Do you see a button that says Go to la "casa".';
 };
 
 const locations = [
   {
-    name: "la casa",
+    name: "camp",
     "button text": ["Go to la casa", "Go to Camp", "Fight Lex Luther"],
     "button functions": [goHome, goToTrainingCamp, fightLexLuther],
     text: 'You have entered into the training camp!! Do you see a button that says Go to la "casa".',
+  },
+
+  {
+    name: "home",
+    "button text": [
+      "Comprar diez health boost!! (10 kata)",
+      "Buy self defense boost!! (30 kata",
+      "Go to training camp",
+    ],
+    text: "You have entered la casa!!",
   },
 ];
