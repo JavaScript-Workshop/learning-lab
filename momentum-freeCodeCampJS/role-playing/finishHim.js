@@ -71,17 +71,18 @@ button2.onclick = goToTrainingCamp;
 button3.onclick = fightLexLuther;
 
 const updateThis = (location) => {
-  button1.innerText = location["button text"];
+  button1.innerText = location["button text"][0];
   button1.onclick = goHome;
-  button2.innerText = "Go to camp";
+
+  button2.innerText = location["button text"][1];
   button2.onclick = goToTrainingCamp;
-  button3.innerText = "Fight Lex Luther";
+
+  button3.innerText = location["button text"][2];
   button3.onclick = goToCamp;
 
   text.innerText =
     'You have entered into the training camp!! Do you see a button that says Go to la "casa".';
 };
-
 const locations = [
   {
     name: "camp",
