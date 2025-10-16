@@ -2012,3 +2012,14 @@ const getAJob = [
     "have a strategy": [],
   },
 ];
+
+const birthday = "October 15";
+
+const davonneTheGreat = {
+  birthday: "October 15, 1993",
+  age: 32,
+  birthdayDinner: "Aguachile",
+  dancing: true,
+};
+
+console.log("Davonne:", davonneTheGreat);
