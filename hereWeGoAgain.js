@@ -557,27 +557,6 @@ console.log(takeTwoNumbersAgain(4, 12));
 console.log(takeTwoNumbersAgain(10, 10));
 console.log(takeTwoNumbersAgain(20, 40));
 
-//date
-let rightNow = new Date();
-rightNow.setFullYear(2024);
-console.log(rightNow);
-
-//log only the year
-console.log(rightNow.getFullYear());
-
-//
-let halloween = new Date("October 31, 2024 00:00:00");
-console.log(`This is Halloween: ${halloween}`);
-
-function tellTime() {
-  let now = new Date();
-  let theHr = now.getHours();
-  let theMin = now.getMinutes();
-  console.log(`What time is it? ${theHr}: ${theMin}`);
-}
-
-tellTime();
-
 //Objects
 
 const company = {
@@ -2023,3 +2002,48 @@ const davonneTheGreat = {
 };
 
 console.log("Davonne:", davonneTheGreat);
+
+//lets get into Claude AI asking Javascript questions
+
+/* 
+
+ Create a function called calculateCartTotal that takes an 
+ array of product objects and calculates the total price.
+ Each product has a name, price, and quantity.
+
+ */
+
+//Date constructor
+//creates Date objects
+//returns a string representing the current time
+
+// setFullYear();
+// setMonth();
+// setDate();
+// setHours();
+// setMInutes();
+// setSeconds();
+// setMilliseconds();
+
+const didThisWork = new Date();
+didThisWork.setFullYear(3000);
+console.log(didThisWork);
+
+const rightNow = new Date();
+console.log("Todays Date:", rightNow);
+
+//log only the year
+console.log(rightNow.getFullYear());
+
+//
+const halloween = new Date("October 31, 2024 00:00:00");
+console.log(`This is Halloween: ${halloween}`);
+
+function tellTime() {
+  let now = new Date();
+  let theHr = now.getHours();
+  let theMin = now.getMinutes();
+  console.log(`What time is it? JavaScipt time  ${theHr}: ${theMin}`);
+}
+
+tellTime();
