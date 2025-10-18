@@ -2047,3 +2047,36 @@ function tellTime() {
 }
 
 tellTime();
+
+//sort
+//sort is a method that belongs to arrays in Javascript
+//you cannot call sort by itself it has to be called on an array
+//sort modifies the original  array (it mutates)
+
+const myFavoriteNumbers = [15, 7, 29, 0, 100];
+myFavoriteNumbers.sort();
+console.log("Sort these numbers:", myFavoriteNumbers);
+
+//ascending
+// numbers.sort((a, b) => a - b);
+
+// //descending
+// numbers.sort((a, b) => b - a);
+
+//
+
+const myMutts = [
+  { name: "Maryjane", age: 12 },
+  { name: "Roxy", age: 7 },
+  { name: "Lexy", age: 5 },
+  { name: "Coco", age: 4 },
+  { name: "Daisy", age: 1 },
+];
+
+console.log(myMutts);
+
+const sortByAge = myMutts.sort((a, b) => a.age - b.age); // [1, 4, 5, 7, 12]
+console.log(sortByAge);
+
+const sortByName = myMutts.sort((a, b) => a.name.localeCompare(b.name));
+console.log(sortByName);
