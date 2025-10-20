@@ -2080,3 +2080,99 @@ console.log(sortByAge);
 
 const sortByName = myMutts.sort((a, b) => a.name.localeCompare(b.name));
 console.log(sortByName);
+
+/*
+
+  Write a function that takes an array of numbers and
+  returns a new array sorted by how frequently each
+  number appears. Numbers that appear more often should
+  come first. If two numbers have the same frequency,
+  sort them in ascending numerical order.
+
+*/
+
+//function that takes an array of numbers
+//returns a new array that is sorted
+
+//null
+// is a primitive data type in Javascript
+// means being intentional empty or no value
+// the variable exists but it has nothing in it at the moment
+
+let currentUser = null; //no user is logged yet
+let selectedItem = null; //nothing selected
+
+if (user === null) {
+  console.log("No user");
+}
+
+//  1. In React, null is commonly used in Conditional Rendering
+
+// function Greeting({ isLoggedIn }) {
+//   if (!isLoggedIn) {
+//     return null; //if no user, don't show anything
+//   }
+//   return <h1>Welcome User..!</h1>;
+// }
+
+// 2. Initial State
+
+// const [user, setUser] = useState(null);
+// const [data, setData] = useState(null);
+
+// if (user === null) {
+//   return <p>Hey you gotta log in !</p>
+//}
+
+// 3. Refs
+
+// const inputRef = useRef(null); //starts at null before component mounts
+
+// useEffect(() => {
+//   if(inputRef.current !== null) {
+//     inputRef.current.focus();
+//   }
+// })
+
+/*
+    In a nutshell 
+    null - "I set this to nothing on purpose"
+    undefined - ""this was never set, and or does not exist
+    false - A boolean value, false is false 
+
+*/
+
+//Array.reduce()
+//is a pure function that takes an accumulator (current state) and a value then returns a new accumulator
+//most common is Array.reduce
+
+//basic
+// array.reduce(reducerFunction, initialValue);
+
+// accumulator - the accumulated result from the previous interations
+// currentValue - the current element being processed
+
+//instances to use reduce
+//summing numbers, finding averages
+//finding min/max values
+//concatenating strings
+//calculating totals like a shopping cart
+
+//creating look up tables/ maps from arrays
+//grouping items by a property
+//counting occurrences/ frequencies
+//converting array of objects to a keyed object
+
+const users = [
+  { id: 1, name: "Davonne" },
+  { id: 2, name: "Jasmine" },
+];
+
+const ourUsers = users.reduce((acc, user) => {
+  acc[user.id] = user;
+  return acc;
+}, {});
+
+console.log("Users:", ourUsers);
+
+console.log(ourUsers[1].name);
