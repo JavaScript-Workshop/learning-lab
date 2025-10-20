@@ -2176,3 +2176,23 @@ const ourUsers = users.reduce((acc, user) => {
 console.log("Users:", ourUsers);
 
 console.log(ourUsers[1].name);
+
+//
+
+const words = ["Hello", "my", "name", "is", "Davonne"];
+
+const mySentence = words.reduce((acc, word) => {
+  return acc + " " + word;
+});
+
+console.log(mySentence);
+
+//sum numbers
+
+const prices = [10, 50, 100, 500];
+
+const total = prices.reduce((acc, price) => {
+  return acc + price;
+}, 0);
+
+console.log(total);
