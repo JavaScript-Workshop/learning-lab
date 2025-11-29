@@ -1,6 +1,6 @@
 # 💡 My JavaScript Learning Lab
 
-This repository is my personal learning space to showcase my journey with the programming language JavaScript. Learning though the resources, Google, Stack Overflow, Claude AI, Github Copilot, ChatGPT, and through the resources provided from [freeCodeCamp](https://www.freecodecamp.org/), and the Bootcamp I attended [Fullstack Academy](fullstackacademy.com).
+This repository is my personal learning space to showcase my journey with the programming language JavaScript. Learning though the resources, Google, Stack Overflow, Claude AI, Github Copilot, ChatGPT, from Developers/Youtubers [Shruti Kapoor](https://www.youtube.com/@shrutikapoor08/featured) and through the resources provided from [freeCodeCamp](https://www.freecodecamp.org/), and the Bootcamp I attended [Fullstack Academy](fullstackacademy.com).
 
 ## 🎯 Project Goals
 
