@@ -242,13 +242,9 @@ Then, using async/await, log the result to the console.
 
 const fetchNumber = async () => {
   return new Promise((resolve) => {
-    setTimeout(
-      () => {
-        resolve(25);
-      },
-      1,
-      500
-    );
+    setTimeout(() => {
+      resolve(25);
+    }, 1500);
   });
 };
 
