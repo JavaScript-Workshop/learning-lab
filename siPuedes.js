@@ -189,4 +189,72 @@ async function didThisShow10() {
   console.log(myNumber10);
 }
 
-didThisShow10(); //10
+didThisShow10(); //expected 10
+
+//another one
+
+const delayedMessage = async () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Maybe this worked, if it did great job!");
+    }, 1000);
+  });
+};
+
+async function whereAboutToFindOut() {
+  const maybe = await delayedMessage();
+  console.log(maybe);
+}
+
+whereAboutToFindOut(); //expected: 'Maybe this worked, if it did great job!'
+
+//Review
+
+//A promise is an object that represents something that will finish later
+//pending - still waiting
+//fulfilled - resolved
+//rejected - rejected
+
+const thisIsAPromise = new Promise((resolve, reject) => {
+  //do something
+  resolve("Yay this worked Davonne!");
+});
+
+//another one
+
+/* 
+
+Create a function called fetchNumber that:
+
+Returns a Promise. After 1.5 seconds, it resolves with the number 25
+Then, using async/await, log the result to the console. 
+
+*/
+
+//function fetch number, async function
+//new promise, resolve as parameter
+//set time out, resolve the number 25
+//for 1.5 seconds
+
+//await the fetchNumber function
+//console.log it
+//call it
+
+const fetchNumber = async () => {
+  return new Promise((resolve) => {
+    setTimeout(
+      () => {
+        resolve(25);
+      },
+      1,
+      500
+    );
+  });
+};
+
+const myFetchedNumber = async () => {
+  const fetchedNumber = await fetchNumber();
+  console.log(fetchedNumber);
+};
+
+myFetchedNumber(); //expected 25
