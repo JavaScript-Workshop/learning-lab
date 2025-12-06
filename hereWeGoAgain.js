@@ -780,27 +780,6 @@ for (let key in sister) {
   console.log(key, sister[key]);
 }
 
-//charAt() -  see line 1608 and below
-//loop through a Set
-//loop through a Map
-
-//Sets
-//Maps
-//while loops
-//do, while
-//for in
-//for of
-//labeled statement
-//break statement
-//continued statement
-//JavaScript Object Prototypes
-//hoisting ?
-//async functions
-//callbacks
-//promises
-//closures
-//
-
 //Javascript questions
 //    PUT EVERYTHING TOGETHER...!
 
@@ -2196,3 +2175,95 @@ const total = prices.reduce((acc, price) => {
 }, 0);
 
 console.log(total);
+
+// Going through Traversy Media React Course
+//going over Javascript as I go
+
+//Array method
+// find()
+
+//search through an array and return the first element
+//returns undefined if no match
+
+const ourMenu = [
+  { name: "Pizza", id: 1 },
+  { name: "Burger", id: 2 },
+  { name: "Tacos", id: 3 },
+];
+
+const getBurger = ourMenu.find((item) => item.id === 2);
+console.log(getBurger); //expected {name: "Burger", id: 2}
+
+//charAt() -  see line 1608 and below
+//Sets
+//Maps
+//while loops
+//do, while
+//for in
+//for of
+//labeled statement
+//break statement
+//continued statement
+//JavaScript Object Prototypes
+//hoisting
+//closures
+
+//12-6-2025
+//Going over Javascript as a go through my React course to understand the course better
+
+//Array.find
+
+//find() array method
+//this method returns the first element in an array that satisfied the testing
+//find() is a function that belongs to arrays, its takes a callback function as its parameter
+//side note a callback function is a function that you pass into another function as an argument
+
+const howManyHarryPotterMovies = [1, 2, 3, 4, 5, 6, 7, 8];
+const myFavoriteHpMovie = howManyHarryPotterMovies.find((movie) => movie > 3);
+
+console.log(
+  "Favorite Harry Potter Movie besides Number one of course",
+  myFavoriteHpMovie
+); //expected 4
+
+//another one
+//define an array of objects
+//log the first student for fun
+//find, using the array method find, a callback function that finds grade grader than 90
+//console log the wizard greater than  90
+
+const gryffindorGrades = [
+  { name: "Harry Potter", house: "Gryffindor", grade: 89 },
+  { name: "Hermione Granger", house: "Gryffindor", grade: 110 },
+  { name: "Ron Wesely", house: "Gryffindor", grade: 79 },
+];
+
+console.log("Harry Potter:", gryffindorGrades[0]); //Harry Potter object
+
+const smartestWizard = gryffindorGrades.find((wizard) => wizard.grade >= 90);
+console.log("Gryffindors Finest:", smartestWizard);
+
+//async functions
+//promises
+
+//another one
+//define a an array of objects
+//find the weapon that meets all 3 conditions
+///find array method, callbackfunction
+// use logical and operator
+
+const inventory = [
+  { item: "Sword", damage: 15, rarity: "common", enchanted: false },
+  { item: "Shield", damage: 0, rarity: "rare", enchanted: true },
+  { item: "Bow", damage: 12, rarity: "common", enchanted: false },
+  { item: "Excalibur", damage: 50, rarity: "legendary", enchanted: true },
+  { item: "Dagger", damage: 8, rarity: "uncommon", enchanted: true },
+];
+
+const bestWeapon = inventory.find(
+  (weapon) =>
+    weapon.damage > 7 &&
+    weapon.rarity === "common" &&
+    weapon.enchanted === false
+);
+console.log("Best Weapon:", bestWeapon); //sowd object
