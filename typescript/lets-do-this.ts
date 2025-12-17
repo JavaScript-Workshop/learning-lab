@@ -65,7 +65,6 @@ let favoriteMovie = "Harry Potter"; //regular js
 //in this case a string
 
 let gettingIntoTypeScript: string = "Hey Davonne did this work";
-let coke: string = "Best soda in the world!";
 let water: string = "A must";
 let videoGame: string = "Call of Duty";
 let placeOfWork: string = "Amazon";
@@ -225,3 +224,47 @@ function helloThere(name: string): string {
 }
 
 console.log(helloThere("Davonne007"));
+
+// And were back..! Lets get into Typescript again
+//React course
+
+// let userIsLoggedIn = true;
+// userIsLoggedIn = 29;
+
+// console.log(userIsLoggedIn); //throws an error, type number is not assignable to type boolean
+
+//Creating a custom type
+
+export type User = {
+  name: string;
+  email: string;
+  age?: number;
+  city?: string;
+};
+
+// ? means optional
+
+const user: User = {
+  name: "Davonne",
+  email: "davonne007@gmail.com",
+  age: 32,
+}; // you can still only provide name and email
+
+//functions
+
+function sendEmail(email: string) {
+  console.log(`Sent To: ${email}`);
+}
+
+sendEmail("davonne@007@gmail.com"); //it matches that type, string from line 255
+
+//or you can do this
+
+function sendThisEmail(user: User) {
+  //pass in the whole user
+  console.log(`Send This Email: ${user.email}`);
+}
+
+sendThisEmail({ name: "Davonne", email: "Did this work" });
+
+//
