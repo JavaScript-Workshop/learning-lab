@@ -251,6 +251,8 @@ const user: User = {
 }; // you can still only provide name and email
 
 //functions
+//function arguments
+//retrun type
 
 function sendEmail(email: string) {
   console.log(`Sent To: ${email}`);
@@ -267,4 +269,39 @@ function sendThisEmail(user: User) {
 
 sendThisEmail({ name: "Davonne", email: "Did this work" });
 
-//
+//return ? we are just doing console log
+
+function sendEmailOneMoreTime(user: User): string {
+  return `Email being sent to: ${user.email}`;
+}
+
+console.log(
+  sendEmailOneMoreTime({ name: "Jasmine Deleon", email: "didThisWork.com" })
+);
+
+//my turn
+
+//this is a blueprint
+//it does nothing at run time
+//tells typescript combo is a string, quatnity is a number etc.
+//reuseable blueprint for many orders, functions etc.
+export type FoodOrder = {
+  combo: string;
+  quanity: number;
+  drink?: string;
+};
+
+//creating an object in Javascript
+//TypeScript checks that it mates the type FoodOrder
+const order: FoodOrder = {
+  combo: "Burger and Fries",
+  quanity: 5,
+};
+
+function placeOrder(order: FoodOrder) {
+  return `My Order: ${order.combo} and I want ${order.quanity} of them!`;
+}
+
+console.log(placeOrder({ combo: "Philly Cheesesteak", quanity: 8 }));
+console.log(placeOrder({ combo: "Ceviche", quanity: 20 }));
+console.log(placeOrder({ combo: "Hot Wings", quanity: 50 }));
