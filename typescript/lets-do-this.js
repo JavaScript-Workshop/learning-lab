@@ -159,6 +159,14 @@ function helloThere(name) {
     return `Hello ${name.toUpperCase()}`;
 }
 console.log(helloThere("Davonne007"));
+// And were back..! Lets get into Typescript again
+//React course
+// let userIsLoggedIn = true;
+// userIsLoggedIn = 29;
+// console.log(userIsLoggedIn); //throws an error, type number is not assignable to type boolean
+//strings
+let foodTruck = "Ceviche Time";
+console.log(foodTruck);
 // ? means optional
 const user = {
     name: "Davonne",
@@ -167,7 +175,7 @@ const user = {
 }; // you can still only provide name and email
 //functions
 //function arguments
-//retrun type
+//return type
 function sendEmail(email) {
     console.log(`Sent To: ${email}`);
 }
@@ -184,14 +192,16 @@ function sendEmailOneMoreTime(user) {
 }
 console.log(sendEmailOneMoreTime({ name: "Jasmine Deleon", email: "didThisWork.com" }));
 //creating an object in Javascript
-//TypeScript checks that it mates the type FoodOrder
+//TypeScript checks that it matches the type FoodOrder
 const order = {
     combo: "Burger and Fries",
-    quanity: 5,
+    quantity: 5,
 };
 function placeOrder(order) {
-    return `My Order: ${order.combo} and I want ${order.quanity} of them!`;
+    return `My Order: ${order.combo} and I want ${order.quantity} of them!`;
 }
-console.log(placeOrder({ combo: "Philly Cheesesteak", quanity: 8 }));
-console.log(placeOrder({ combo: "Ceviche", quanity: 20 }));
-console.log(placeOrder({ combo: "Hot Wings", quanity: 50 }));
+console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 8 }));
+console.log(placeOrder({ combo: "Ceviche", quantity: 20 }));
+console.log(placeOrder({ combo: "Hot Wings", quantity: 50 }));
+//
+//another one

@@ -226,15 +226,36 @@ function helloThere(name: string): string {
 console.log(helloThere("Davonne007"));
 
 // And were back..! Lets get into Typescript again
-//React course
+
+//strings
+let foodTruck: string = "Ceviche Time";
+console.log(foodTruck);
+
+let myFreelanceBusiness: string = "Djvd Web Services";
+console.log(myFreelanceBusiness);
+
+//throws an error, type number is not assignable to type boolean
 
 // let userIsLoggedIn = true;
 // userIsLoggedIn = 29;
 
-// console.log(userIsLoggedIn); //throws an error, type number is not assignable to type boolean
+// console.log(userIsLoggedIn);
+/*
+  What is a type?
+  
+  A type is a label that describes what kind of value something is. 
+  A type that describes what kind of value a variable can have. 
+  ** A type defines the structure and data types of a value, and TS uses it
+  to check that variables match that structure. 
+
+  Type --> the rules 
+  Variable --> the thing that must follow the rules 
+
+*/
 
 //Creating a custom type
 
+//User describes the shape of the data
 export type User = {
   name: string;
   email: string;
@@ -242,8 +263,9 @@ export type User = {
   city?: string;
 };
 
-// ? means optional
+//? means optional
 
+//user must match the User description
 const user: User = {
   name: "Davonne",
   email: "davonne007@gmail.com",
@@ -252,7 +274,7 @@ const user: User = {
 
 //functions
 //function arguments
-//retrun type
+//return type
 
 function sendEmail(email: string) {
   console.log(`Sent To: ${email}`);
@@ -287,21 +309,25 @@ console.log(
 //reuseable blueprint for many orders, functions etc.
 export type FoodOrder = {
   combo: string;
-  quanity: number;
+  quantity: number;
   drink?: string;
 };
 
 //creating an object in Javascript
-//TypeScript checks that it mates the type FoodOrder
+//TypeScript checks that it matches the type FoodOrder
 const order: FoodOrder = {
   combo: "Burger and Fries",
-  quanity: 5,
+  quantity: 5,
 };
 
 function placeOrder(order: FoodOrder) {
-  return `My Order: ${order.combo} and I want ${order.quanity} of them!`;
+  return `My Order: ${order.combo} and I want ${order.quantity} of them!`;
 }
 
-console.log(placeOrder({ combo: "Philly Cheesesteak", quanity: 8 }));
-console.log(placeOrder({ combo: "Ceviche", quanity: 20 }));
-console.log(placeOrder({ combo: "Hot Wings", quanity: 50 }));
+console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 8 }));
+console.log(placeOrder({ combo: "Ceviche", quantity: 20 }));
+console.log(placeOrder({ combo: "Hot Wings", quantity: 50 }));
+
+//
+
+//another one
