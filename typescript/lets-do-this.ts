@@ -251,6 +251,26 @@ console.log(myFreelanceBusiness);
   Type --> the rules 
   Variable --> the thing that must follow the rules 
 
+  Claude: 
+  Types = telling TypeScript what kind of data you're working with, so it
+  can catch bugs early and help your editor give better suggestions.
+  
+*/
+
+//Review
+
+/*
+
+  Primitive Types 
+
+  string 
+  number
+  boolean 
+  undefined - a variable exists but has no value 
+  symbol 
+  null - on purpose, set to nothing 
+  bigint
+
 */
 
 //Creating a custom type
@@ -266,6 +286,7 @@ export type User = {
 //? means optional
 
 //user must match the User description
+//User defines what user must look like
 const user: User = {
   name: "Davonne",
   email: "davonne007@gmail.com",
@@ -305,7 +326,7 @@ console.log(
 
 //this is a blueprint
 //it does nothing at run time
-//tells typescript combo is a string, quatnity is a number etc.
+//tells typescript combo is a string, quantity is a number etc.
 //reuseable blueprint for many orders, functions etc.
 export type FoodOrder = {
   combo: string;
@@ -331,3 +352,53 @@ console.log(placeOrder({ combo: "Hot Wings", quantity: 50 }));
 //
 
 //another one
+
+//define the shape of product data
+export type OurProduct = {
+  id: number;
+  name: string;
+  price: number;
+  deal: boolean;
+  description: string;
+  category: string;
+  imageUrl?: string;
+};
+
+//an object that conforms the shape
+//follow the shape
+const airPods: OurProduct = {
+  id: 1,
+  name: "Ultimate Air",
+  price: 300,
+  deal: false,
+  description:
+    "Powerful headphones, ultimate listening, noise cancellation, AI powered",
+  category: "headphones",
+  imageUrl: "./images/test.webp",
+};
+
+function getPods(airPods: OurProduct) {
+  return `We are purchasing the ${airPods.name} for ${airPods.price}.`;
+}
+
+console.log(
+  getPods({
+    id: 2,
+    name: "Stellar Air",
+    price: 250,
+    deal: true,
+    description: "High-quality wireless earbuds",
+    category: "headphones",
+  })
+);
+
+console.log(
+  getPods({
+    id: 3,
+    name: "Balling Air",
+    price: 300,
+    deal: false,
+    description: "High-quality wireless AI powered earbuds",
+    category: "headphones",
+  })
+);

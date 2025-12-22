@@ -160,14 +160,14 @@ function helloThere(name) {
 }
 console.log(helloThere("Davonne007"));
 // And were back..! Lets get into Typescript again
-//React course
-// let userIsLoggedIn = true;
-// userIsLoggedIn = 29;
-// console.log(userIsLoggedIn); //throws an error, type number is not assignable to type boolean
 //strings
 let foodTruck = "Ceviche Time";
 console.log(foodTruck);
-// ? means optional
+let myFreelanceBusiness = "Djvd Web Services";
+console.log(myFreelanceBusiness);
+//? means optional
+//user must match the User description
+//User defines what user must look like
 const user = {
     name: "Davonne",
     email: "davonne007@gmail.com",
@@ -203,5 +203,33 @@ function placeOrder(order) {
 console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 8 }));
 console.log(placeOrder({ combo: "Ceviche", quantity: 20 }));
 console.log(placeOrder({ combo: "Hot Wings", quantity: 50 }));
-//
-//another one
+//an object that conforms the shape
+//follow the shape
+const airPods = {
+    id: 1,
+    name: "Ultimate Air",
+    price: 300,
+    deal: false,
+    description: "Powerful headphones, ultimate listening, noise cancellation, AI powered",
+    category: "headphones",
+    imageUrl: "./images/test.webp",
+};
+function getPods(airPods) {
+    return `We are purchasing the ${airPods.name} for ${airPods.price}.`;
+}
+console.log(getPods({
+    id: 2,
+    name: "Stellar Air",
+    price: 250,
+    deal: true,
+    description: "High-quality wireless earbuds",
+    category: "headphones",
+}));
+console.log(getPods({
+    id: 3,
+    name: "Balling Air",
+    price: 300,
+    deal: false,
+    description: "High-quality wireless AI powered earbuds",
+    category: "headphones",
+}));
