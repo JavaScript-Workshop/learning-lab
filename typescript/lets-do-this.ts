@@ -13,7 +13,7 @@
 //a syntactic superset of JS which adds static typing
 
 //Javascript with super powers
-//esentially js, with a type system on top
+//essentially js, with a type system on top
 //extending javascript with types
 
 //catch errors early in your editor
@@ -42,8 +42,8 @@
 
 // Typescript -
 // - catching errors and readability
-// can servce as documentation, making it clearer what functions to expect and return
-// - catches errors at complile time
+// can serve as documentation, making it clearer what functions to expect and return
+// - catches errors at compile time
 // - transforms code before you run
 // - a superset of Javascript
 // - adds on top of javascript
@@ -68,6 +68,7 @@ let gettingIntoTypeScript: string = "Hey Davonne did this work";
 let water: string = "A must";
 let videoGame: string = "Call of Duty";
 let placeOfWork: string = "Amazon";
+let goals: string = "Fullstack Web App";
 
 //
 let me: string = "Davonne";
@@ -127,6 +128,8 @@ let numberOfDog: number = 5;
 
 let isActive: boolean = true;
 let isComplete: boolean = true;
+let isLocked: boolean = false;
+let isOpened: boolean = true;
 
 //any type
 //enables type checking and doesn't refer to any specific type of data
@@ -170,7 +173,7 @@ console.log(oneStep);
 //
 
 const experienceSoFar: string[] = [
-  "Selftaught, Bootcamp",
+  "Self taught, Bootcamp",
   "Frontend Development",
   "Building UI projects, Freelancing",
   "Collaborating",
@@ -194,15 +197,18 @@ console.log("My favorite colors:", favoriteColors);
 //
 
 const favoriteMovies: Array<string> = [
-  "Harry Potter",
   "Lord of The Rings",
+  "Harry Potter",
   "Scream",
+  "Twlight",
+  "Like Mike",
+  "Toy Story",
 ];
-console.log(favoriteMovies);
+console.log("Favorite Movies: ", favoriteMovies);
 
 //
 
-const needToDos: Array<string> = ["Resume", "Profile", "Fullstack Project"];
+const needToDos: Array<string> = ["React course", "Fullstack Project", "Java"];
 
 console.log("A must:", needToDos);
 
@@ -232,7 +238,14 @@ let foodTruck: string = "Ceviche Time";
 console.log(foodTruck);
 
 let myFreelanceBusiness: string = "Djvd Web Services";
-console.log(myFreelanceBusiness);
+//console.log(myFreelanceBusiness);
+
+//more strings
+let nickName: string = "Vonney";
+let dogBreed: string = "Boxer";
+let secondNickName: string = "Davonneizzle";
+
+console.log("My Gamer Tag:", secondNickName);
 
 //throws an error, type number is not assignable to type boolean
 
@@ -322,35 +335,6 @@ console.log(
   sendEmailOneMoreTime({ name: "Jasmine Deleon", email: "didThisWork.com" })
 );
 
-//my turn
-
-//this is a blueprint
-//it does nothing at run time
-//tells typescript combo is a string, quantity is a number etc.
-//reuseable blueprint for many orders, functions etc.
-export type FoodOrder = {
-  combo: string;
-  quantity: number;
-  drink?: string;
-};
-
-//creating an object in Javascript
-//TypeScript checks that it matches the type FoodOrder
-const order: FoodOrder = {
-  combo: "Burger and Fries",
-  quantity: 5,
-};
-
-function placeOrder(order: FoodOrder) {
-  return `My Order: ${order.combo} and I want ${order.quantity} of them!`;
-}
-
-console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 8 }));
-console.log(placeOrder({ combo: "Ceviche", quantity: 20 }));
-console.log(placeOrder({ combo: "Hot Wings", quantity: 50 }));
-
-//
-
 //another one
 
 //define the shape of product data
@@ -402,3 +386,65 @@ console.log(
     category: "headphones",
   })
 );
+
+//another one
+
+//this is a blueprint
+//it does nothing at run time
+//tells typescript combo is a string, quantity is a number etc.
+//reuseable blueprint for many orders, functions etc.
+export type FoodOrder = {
+  combo: string;
+  quantity: number;
+  drink?: string;
+};
+
+//creating an object in Javascript
+//TypeScript checks that it matches the type FoodOrder
+const order: FoodOrder = {
+  combo: "Burger and Fries",
+  quantity: 5,
+};
+
+function placeOrder(order: FoodOrder) {
+  return `My Order: ${order.combo} and I want ${order.quantity} of them!`;
+}
+
+console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 19 }));
+console.log(placeOrder({ combo: "Ceviche", quantity: 8 }));
+console.log(placeOrder({ combo: "Hot Wings", quantity: 100 }));
+
+//another one
+
+//defining the shape of the data of a concert goer
+type ConcertGoer = {
+  name: string;
+  age: number;
+  email: string;
+  firstConcert?: boolean; //optional
+};
+
+const concertTicketSold: ConcertGoer = {
+  name: "Lexy Vigil",
+  age: 32,
+  email: "goAllIn@cobra.com",
+};
+
+console.log("Concert ticket sold to:", concertTicketSold);
+
+// another one
+type Post = {
+  title: string;
+  description: string;
+  id: number;
+  createdAt: Date;
+};
+
+const stellarPost: Post = {
+  title: "New Year, New Me",
+  description: "Going all in, whatever it takes to learn and grow!",
+  id: 10,
+  createdAt: new Date(),
+};
+
+console.log("Did This Work:", stellarPost);

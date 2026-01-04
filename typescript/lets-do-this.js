@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //Typescript is Javascript with added syntax for types
 //a syntactic superset of JS which adds static typing
 //Javascript with super powers
-//esentially js, with a type system on top
+//essentially js, with a type system on top
 //extending javascript with types
 //catch errors early in your editor
 //prevents errors
@@ -29,8 +29,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // ! Typescript catches errors at compile time, before your code runs rather then at runtime
 // Typescript -
 // - catching errors and readability
-// can servce as documentation, making it clearer what functions to expect and return
-// - catches errors at complile time
+// can serve as documentation, making it clearer what functions to expect and return
+// - catches errors at compile time
 // - transforms code before you run
 // - a superset of Javascript
 // - adds on top of javascript
@@ -42,23 +42,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //Implicit
 //typescript will guess the type, based on the assigned value
 //having TypeScript "guess" the type of a value is called infer ****
-let favoriteMovie = "Harry Potter"; //regular js
+var favoriteMovie = "Harry Potter"; //regular js
 //Explicit
 //writing out the type
 //in this case a string
-let gettingIntoTypeScript = "Hey Davonne did this work";
-let water = "A must";
-let videoGame = "Call of Duty";
-let placeOfWork = "Amazon";
+var gettingIntoTypeScript = "Hey Davonne did this work";
+var water = "A must";
+var videoGame = "Call of Duty";
+var placeOfWork = "Amazon";
+var goals = "Fullstack Web App";
 //
-let me = "Davonne";
+var me = "Davonne";
 console.log(typeof me);
-let mySecondLineOfTypeScript = "This is a language being learned in a lot of companies";
+var mySecondLineOfTypeScript = "This is a language being learned in a lot of companies";
 console.log(typeof mySecondLineOfTypeScript); //expect string
-let favoriteColor = "pink";
+var favoriteColor = "pink";
 console.log(typeof favoriteColor);
 //Array type
-let whereIWantToVisit = [
+var whereIWantToVisit = [
     "Rome",
     "Washington DC",
     "Japan",
@@ -67,60 +68,62 @@ let whereIWantToVisit = [
 ];
 console.log(typeof whereIWantToVisit);
 //
-let favNumbers = [7, 15, 29, 21];
+var favNumbers = [7, 15, 29, 21];
 console.log(favNumbers);
 //
-let toDoList = ["TypeScript", "JavaScript", "Code Review"];
+var toDoList = ["TypeScript", "JavaScript", "Code Review"];
 console.log(toDoList);
 //
-let myDogs = ["Maryjane", "Roxy", "Lexy", "Coco", "Daisy"];
+var myDogs = ["Maryjane", "Roxy", "Lexy", "Coco", "Daisy"];
 console.log(typeof myDogs, myDogs);
 //ts tells us if the type is wrong
 // let failingGrade: string[] = [64, 63, 62, 61, 60, 59];
 //
 // Number type
-let howManyFollowers = 1000;
+var howManyFollowers = 1000;
 console.log(howManyFollowers);
-let age = 31;
-let drinkingAge = 21;
+var age = 31;
+var drinkingAge = 21;
 console.log(drinkingAge);
-let numberOfDog = 5;
+var numberOfDog = 5;
 //Boolean type
-let isActive = true;
-let isComplete = true;
+var isActive = true;
+var isComplete = true;
+var isLocked = false;
+var isOpened = true;
 //any type
 //enables type checking and doesn't refer to any specific type of data
 //allows any type really
 //only used in extreme scenarios
-let numberOfUsers = 10000;
+var numberOfUsers = 10000;
 //you can create an empty variable, with disabled type checking
-let myRandomVariable;
+var myRandomVariable;
 //unknown type
 //unknown is a safe alternative to any
 //it is best used when you don't know the type of data being typed
 //to add a type later, you'll need to cast it. Casting is when you
 //use the "as" keyword to say property or variable is of the casted type
-let testing123 = "Roger, checking in";
+var testing123 = "Roger, checking in";
 console.log(typeof testing123);
 //you can also have an empty unknown
-let thisIsUnknown;
+var thisIsUnknown;
 function addThis(num1, num2) {
     return num1 + num2;
 }
 console.log(addThis(2, 2)); //since the parameters are any type, will return 4
 //Otra vez
-const hereWeGo = "again";
-const oneMoreTime = "time";
-const testing4321 = "did this work";
-const answer = "yes it did, good job";
+var hereWeGo = "again";
+var oneMoreTime = "time";
+var testing4321 = "did this work";
+var answer = "yes it did, good job";
 console.log(answer);
 //
-const learningTypescript = "Learning is a process";
-const oneStep = "One step at a time";
+var learningTypescript = "Learning is a process";
+var oneStep = "One step at a time";
 console.log(oneStep);
 //
-const experienceSoFar = [
-    "Selftaught, Bootcamp",
+var experienceSoFar = [
+    "Self taught, Bootcamp",
     "Frontend Development",
     "Building UI projects, Freelancing",
     "Collaborating",
@@ -134,17 +137,20 @@ const experienceSoFar = [
 console.log("Davonne:", experienceSoFar);
 //otra vez
 //you can also do an array this way. Array<string> syntax
-const favoriteColors = ["pink", "black", "green", "purple"];
+var favoriteColors = ["pink", "black", "green", "purple"];
 console.log("My favorite colors:", favoriteColors);
 //
-const favoriteMovies = [
-    "Harry Potter",
+var favoriteMovies = [
     "Lord of The Rings",
+    "Harry Potter",
     "Scream",
+    "Twlight",
+    "Like Mike",
+    "Toy Story",
 ];
-console.log(favoriteMovies);
+console.log("Favorite Movies: ", favoriteMovies);
 //
-const needToDos = ["Resume", "Profile", "Fullstack Project"];
+var needToDos = ["React course", "Fullstack Project", "Java"];
 console.log("A must:", needToDos);
 //Why use Types?
 //regular JavaScript - what do you see
@@ -156,19 +162,24 @@ console.log("A must:", needToDos);
 // console.log(greet("Davonne")); //getting error - name
 // //makes sense, theres no type
 function helloThere(name) {
-    return `Hello ${name.toUpperCase()}`;
+    return "Hello ".concat(name.toUpperCase());
 }
 console.log(helloThere("Davonne007"));
 // And were back..! Lets get into Typescript again
 //strings
-let foodTruck = "Ceviche Time";
+var foodTruck = "Ceviche Time";
 console.log(foodTruck);
-let myFreelanceBusiness = "Djvd Web Services";
-console.log(myFreelanceBusiness);
+var myFreelanceBusiness = "Djvd Web Services";
+//console.log(myFreelanceBusiness);
+//more strings
+var nickName = "Vonney";
+var dogBreed = "Boxer";
+var secondNickName = "Davonneizzle";
+console.log("My Gamer Tag:", secondNickName);
 //? means optional
 //user must match the User description
 //User defines what user must look like
-const user = {
+var user = {
     name: "Davonne",
     email: "davonne007@gmail.com",
     age: 32,
@@ -177,35 +188,23 @@ const user = {
 //function arguments
 //return type
 function sendEmail(email) {
-    console.log(`Sent To: ${email}`);
+    console.log("Sent To: ".concat(email));
 }
 sendEmail("davonne@007@gmail.com"); //it matches that type, string from line 255
 //or you can do this
 function sendThisEmail(user) {
     //pass in the whole user
-    console.log(`Send This Email: ${user.email}`);
+    console.log("Send This Email: ".concat(user.email));
 }
 sendThisEmail({ name: "Davonne", email: "Did this work" });
 //return ? we are just doing console log
 function sendEmailOneMoreTime(user) {
-    return `Email being sent to: ${user.email}`;
+    return "Email being sent to: ".concat(user.email);
 }
 console.log(sendEmailOneMoreTime({ name: "Jasmine Deleon", email: "didThisWork.com" }));
-//creating an object in Javascript
-//TypeScript checks that it matches the type FoodOrder
-const order = {
-    combo: "Burger and Fries",
-    quantity: 5,
-};
-function placeOrder(order) {
-    return `My Order: ${order.combo} and I want ${order.quantity} of them!`;
-}
-console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 8 }));
-console.log(placeOrder({ combo: "Ceviche", quantity: 20 }));
-console.log(placeOrder({ combo: "Hot Wings", quantity: 50 }));
 //an object that conforms the shape
 //follow the shape
-const airPods = {
+var airPods = {
     id: 1,
     name: "Ultimate Air",
     price: 300,
@@ -215,7 +214,7 @@ const airPods = {
     imageUrl: "./images/test.webp",
 };
 function getPods(airPods) {
-    return `We are purchasing the ${airPods.name} for ${airPods.price}.`;
+    return "We are purchasing the ".concat(airPods.name, " for ").concat(airPods.price, ".");
 }
 console.log(getPods({
     id: 2,
@@ -233,3 +232,28 @@ console.log(getPods({
     description: "High-quality wireless AI powered earbuds",
     category: "headphones",
 }));
+//creating an object in Javascript
+//TypeScript checks that it matches the type FoodOrder
+var order = {
+    combo: "Burger and Fries",
+    quantity: 5,
+};
+function placeOrder(order) {
+    return "My Order: ".concat(order.combo, " and I want ").concat(order.quantity, " of them!");
+}
+console.log(placeOrder({ combo: "Philly Cheesesteak", quantity: 19 }));
+console.log(placeOrder({ combo: "Ceviche", quantity: 8 }));
+console.log(placeOrder({ combo: "Hot Wings", quantity: 100 }));
+var concertTicketSold = {
+    name: "Lexy Vigil",
+    age: 32,
+    email: "goAllIn@cobra.com",
+};
+console.log("Concert ticket sold to:", concertTicketSold);
+var stellarPost = {
+    title: "New Year, New Me",
+    description: "Going all in, whatever it takes to learn and grow!",
+    id: 10,
+    createdAt: new Date(),
+};
+console.log("Did This Work:", stellarPost);
