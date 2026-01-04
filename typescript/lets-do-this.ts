@@ -509,3 +509,27 @@ scores.push(90, 400); //push adds elements
 scores.pop(); //removes the last element in the array
 
 console.log(scores);
+
+//object destructuring
+function getMyUser({ name, age }: { name: string; age: number }) {
+  return `We have a new user name ${name} and is ${age} years old`;
+}
+
+console.log(getMyUser({ name: "Samantha LuRusso", age: 26 }));
+console.log(getMyUser({ name: "Jasmine Deleon", age: 32 }));
+
+//another one
+
+function getConcertInfo({
+  singer,
+  ticketPrice,
+}: {
+  singer: string;
+  ticketPrice: number;
+}) {
+  return `We have exclusive tickets for ${singer} for the price of ${ticketPrice} dollars!`;
+}
+
+console.log(getConcertInfo({ singer: "Hannah Montana", ticketPrice: 500 }));
+
+//
