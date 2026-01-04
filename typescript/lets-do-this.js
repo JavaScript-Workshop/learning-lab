@@ -250,10 +250,50 @@ var concertTicketSold = {
     email: "goAllIn@cobra.com",
 };
 console.log("Concert ticket sold to:", concertTicketSold);
+function sendConfirmationEmail(email) {
+    return "Payment successful: Email confirmation sent to ".concat(email);
+}
+console.log(sendConfirmationEmail("jonasForever@live.com"));
 var stellarPost = {
     title: "New Year, New Me",
-    description: "Going all in, whatever it takes to learn and grow!",
+    description: "going all in, whatever it takes to learn and grow!",
     id: 10,
     createdAt: new Date(),
 };
 console.log("Did This Work:", stellarPost);
+function sendPost(title, description) {
+    return "".concat(title, " and were ").concat(description);
+}
+console.log(sendPost("New Year, New Me 2026", "Taking it step by step and level up in web dev."));
+//
+//arrays
+var dinnerItems = [
+    "Sweet and Sour Shrimp",
+    "Orange Chicken",
+    "Chicken and Broccoli",
+];
+//dinnerItems.push(20); //throws an error, it knows it should be a string
+// another way to see arrays in typescript
+var chineseDinnerItems = [
+    "Chicken Fried Rice",
+    "Sememe Chicken",
+    "Curry Chicken",
+];
+//or
+var chineseTackOutDinnerItems = [
+    "Shrimp Fried Rice",
+    "Katsu and Rice",
+    "Shrimp and Brocclii",
+];
+chineseDinnerItems.push("Combination Fried Rice");
+console.log("Dinner Items:", chineseDinnerItems);
+//another array
+//numbers in an array
+var lotteryTicketNumbers = [2, 4, 6, 8, 10, 12];
+console.log(lotteryTicketNumbers);
+var gradePercentages = [100, 90, 80, 70, 60, 50];
+console.log(gradePercentages);
+var scores = [150, 200, 350, 50];
+scores.push(90, 400); //push adds elements
+scores.pop(); //removes the last element in the array
+console.log(scores);

@@ -432,6 +432,12 @@ const concertTicketSold: ConcertGoer = {
 
 console.log("Concert ticket sold to:", concertTicketSold);
 
+function sendConfirmationEmail(email: string) {
+  return `Payment successful: Email confirmation sent to ${email}`;
+}
+
+console.log(sendConfirmationEmail("jonasForever@live.com"));
+
 // another one
 type Post = {
   title: string;
@@ -442,9 +448,64 @@ type Post = {
 
 const stellarPost: Post = {
   title: "New Year, New Me",
-  description: "Going all in, whatever it takes to learn and grow!",
+  description: "going all in, whatever it takes to learn and grow!",
   id: 10,
   createdAt: new Date(),
 };
 
 console.log("Did This Work:", stellarPost);
+
+function sendPost(title: string, description: string) {
+  return `${title} and were ${description}`;
+}
+
+console.log(
+  sendPost(
+    "New Year, New Me 2026",
+    "Taking it step by step and level up in web dev."
+  )
+);
+
+//
+
+//arrays
+const dinnerItems = [
+  "Sweet and Sour Shrimp",
+  "Orange Chicken",
+  "Chicken and Broccoli",
+];
+
+//dinnerItems.push(20); //throws an error, it knows it should be a string
+
+// another way to see arrays in typescript
+
+const chineseDinnerItems: string[] = [
+  "Chicken Fried Rice",
+  "Sememe Chicken",
+  "Curry Chicken",
+];
+
+//or
+
+const chineseTackOutDinnerItems: Array<string> = [
+  "Shrimp Fried Rice",
+  "Katsu and Rice",
+  "Shrimp and Brocclii",
+];
+chineseDinnerItems.push("Combination Fried Rice");
+console.log("Dinner Items:", chineseDinnerItems);
+
+//another array
+
+//numbers in an array
+let lotteryTicketNumbers: number[] = [2, 4, 6, 8, 10, 12];
+console.log(lotteryTicketNumbers);
+
+let gradePercentages: number[] = [100, 90, 80, 70, 60, 50];
+console.log(gradePercentages);
+
+let scores: Array<number> = [150, 200, 350, 50];
+scores.push(90, 400); //push adds elements
+scores.pop(); //removes the last element in the array
+
+console.log(scores);
