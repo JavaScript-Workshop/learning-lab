@@ -599,3 +599,76 @@ const worker: Employee = {
 };
 
 console.log("did this work:", worker);
+
+//any type
+//special type
+//it disables type checking
+//not really recommended
+
+//The any type is a special type that tells TypeScript, I don't care what type this is, it can be anything.
+//turns off type checking
+
+//any in a variable
+let buffaloSauce: any;
+
+buffaloSauce = 10;
+buffaloSauce = "hot";
+
+//values can be anything
+
+//any in a function parameter
+function printThisSpreadSheet(value: any) {
+  console.log(value);
+}
+printThisSpreadSheet(20); //could of been any value
+
+//
+
+function getGame(value: any) {
+  console.log(value);
+}
+
+getGame("Lord of the Rings");
+getGame(50);
+
+//an array that can hold any value
+let mixedArray: any[] = [1, "did this work", true, { id: 20 }, null];
+
+mixedArray.push(new Date());
+console.log(mixedArray);
+
+//
+let outOfStock: any[] = ["carrots", "corn", 4, true];
+console.log("Out of Stock", outOfStock);
+
+//
+
+//any with objects
+
+let davonne: any = {
+  name: "Davonne",
+  age: 32,
+};
+
+davonne.favoriteColor = "pink"; //no errors
+console.log(davonne);
+
+//
+
+function identity(value: any) {
+  return value;
+}
+
+const result = identity(true);
+
+//and it can help you catch errors
+// function identity2(value: any) {
+//   return value;
+// }
+
+// const result2 = identity("hello");
+// result2.toFixed(); //throws an error, result2.toFixed is not a function, because toFixed is for numbers
+
+// console.log(result2);
+
+//
