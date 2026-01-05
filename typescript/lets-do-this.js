@@ -311,3 +311,26 @@ function getConcertInfo(_a) {
 }
 console.log(getConcertInfo({ singer: "Hannah Montana", ticketPrice: 500 }));
 //
+//otra vez
+function getDogToy(_a) {
+    var name = _a.name, description = _a.description, price = _a.price;
+    return "My dog Daisy loves to play with the ".concat(name, " and it is ").concat(price, " dollars.");
+}
+console.log(getDogToy({ name: "tennis ball", price: 4 }));
+console.log(getDogToy({ name: "soccer ball", price: 10 }));
+//use it
+var bella = {
+    name: "Bella",
+    age: 120,
+};
+function purchaseCar(car) {
+    console.log("I have a ".concat(car.brand, " from ").concat(car.year));
+}
+purchaseCar({ brand: "Nissan", year: 1992, isStickShift: true }); //throws an error if it does not include all the properties, unless the property is optional
+purchaseCar({ brand: "Mustang", year: 1950, isStickShift: true });
+var worker = {
+    name: "Davonne",
+    age: 32,
+    jobTitle: "Software Engineer",
+};
+console.log("did this work:", worker);

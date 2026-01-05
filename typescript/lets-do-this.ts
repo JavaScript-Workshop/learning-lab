@@ -533,3 +533,69 @@ function getConcertInfo({
 console.log(getConcertInfo({ singer: "Hannah Montana", ticketPrice: 500 }));
 
 //
+
+//otra vez
+function getDogToy({
+  name,
+  description,
+  price,
+}: {
+  name: string;
+  description?: string;
+  price: number;
+}) {
+  return `My dog Daisy loves to play with the ${name} and it is ${price} dollars.`;
+}
+
+console.log(getDogToy({ name: "tennis ball", price: 4 }));
+console.log(getDogToy({ name: "soccer ball", price: 10 }));
+
+//What is an interface?
+//An interface is a way to define the structure or shape of an object. It tells ts
+//what properties an object should have and what types those properties should be.
+//interfaces help catch mistakes before you run the code
+
+//define an interface
+interface Person {
+  name: string;
+  age: number;
+}
+
+//use it
+const bella: Person = {
+  name: "Bella",
+  age: 120,
+};
+
+//
+
+interface Car {
+  brand: string;
+  year: number;
+  isStickShift: boolean;
+}
+
+function purchaseCar(car: Car) {
+  console.log(`I have a ${car.brand} from ${car.year}`);
+}
+
+purchaseCar({ brand: "Nissan", year: 1992, isStickShift: true }); //throws an error if it does not include all the properties, unless the property is optional
+purchaseCar({ brand: "Mustang", year: 1950, isStickShift: true });
+
+//interfaces can be extended like inheritance
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Employee extends Person {
+  jobTitle: string;
+}
+
+const worker: Employee = {
+  name: "Davonne",
+  age: 32,
+  jobTitle: "Software Engineer",
+};
+
+console.log("did this work:", worker);
