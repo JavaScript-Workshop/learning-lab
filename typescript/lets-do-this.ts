@@ -654,6 +654,21 @@ davonne.favoriteColor = "pink"; //no errors
 console.log(davonne);
 
 //
+let getOrder: any = {
+  name: "Burger",
+  price: 10,
+};
+
+getOrder.location = "Elm Street";
+
+//
+
+//a better alternative is: unknown
+
+let value: unknown = "helloooo unknown";
+console.log(value);
+
+//
 
 function identity(value: any) {
   return value;
@@ -672,3 +687,32 @@ const result = identity(true);
 // console.log(result2);
 
 //
+
+//Generics
+//they let you write flexible, reuseable code that works with multiple types while still keeping type safety.
+//without typescript you need to write the same function multiple times
+//a placeholder for types
+//<T>
+//lets you write a function or component that works for any type, while keeping type safety
+
+function identity3<T>(value: any) {
+  return value;
+}
+
+const result3 = identity3<string>("hi did this work");
+const work = result3.toUpperCase();
+console.log(work);
+
+const result4 = identity3<number>(24);
+const showTheNumber24 = result4.toFixed();
+console.log(showTheNumber24);
+
+//with Generics, one function for all
+
+function getFirst<T>(arr: T[]): T {
+  return arr[0];
+}
+
+const firstNumber = getFirst([1, 2, 3]); //T is a number
+const firstString = getFirst(["lexy", "coco", "roxy"]); //T is a string
+const firstBoolean = getFirst([true, false]); // T is a boolean

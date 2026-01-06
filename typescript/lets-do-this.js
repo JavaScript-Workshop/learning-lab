@@ -372,6 +372,16 @@ var davonne = {
 davonne.favoriteColor = "pink"; //no errors
 console.log(davonne);
 //
+var getOrder = {
+    name: "Burger",
+    price: 10,
+};
+getOrder.location = "Elm Street";
+//
+//a better alternative is: unknown
+var value = "helloooo unknown";
+console.log(value);
+//
 function identity(value) {
     return value;
 }
@@ -384,3 +394,24 @@ var result = identity(true);
 // result2.toFixed(); //throws an error, result2.toFixed is not a function, because toFixed is for numbers
 // console.log(result2);
 //
+//Generics
+//they let you write flexible, reuseable code that works with multiple types while still keeping type safety.
+//without typescript you need to write the same function multiple times
+//a placeholder for types
+//<T>
+//lets you write a function or component that works for any type, while keeping type safety
+function identity3(value) {
+    return value;
+}
+var result3 = identity3("hi did this work");
+var work = result3.toUpperCase();
+console.log(work);
+var result4 = identity3(24);
+var showTheNumber24 = result4.toFixed();
+console.log(showTheNumber24);
+//with Generics, one function for all
+function getFirst(arr) {
+    return arr[0];
+}
+var firstNumber = getFirst([1, 2, 3]);
+console.log(firstNumber); //expected 1
