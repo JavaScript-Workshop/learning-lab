@@ -384,6 +384,8 @@ function getSum(num1, num2) {
 
 console.log(getSum(8, 5));
 
+//
+
 //Array Method Reduce
 
 //Function declaration
@@ -764,21 +766,91 @@ for (let i = 0; i < lotteryTicketNumbers.length; i++) {
   console.log(lotteryTicketNumbers[i]);
 }
 
-//loop through a String
+//loop through a string
 const transferableSkills = ["Sales", "Communication", "Leadership", "Detailed"];
 
 for (let i = 0; i < transferableSkills.length; i++) {
   console.log(transferableSkills[i]);
 }
 
-//for...in loop
-//loop through an object
+//
+
+const gamePlan = ["React Course", "JavaScript", "TypeScript", "Backend"];
+for (let i = 0; i < gamePlan.length; i++) {
+  console.log(gamePlan[i]);
+}
+
+//
+
+//Write a for loop that loops through the numbers 1-10, prints only
+//the even numbers
+
+//declare an array of numbers
+//loop through the numbers, i
+//if array is an even number, console log the numbers
+
+const myArrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < myArrayOfNumbers.length; i++) {
+  if (myArrayOfNumbers[i] % 2 === 0) {
+    console.log("My Even Number:", myArrayOfNumbers[i]);
+  }
+}
+
+//
+
+//Write a for loop that counts how many even numbers are in an array
+
+//declare an array of numbers
+//let count = 0
+//loop through the numbers
+//if number is even, count it
+
+const youCanCountEvenNumbers = [1, 20, 15, 60, 80, 30, 7];
+let numberOfEvenNumbers = 0;
+for (let i = 0; i < youCanCountEvenNumbers.length; i++) {
+  if (youCanCountEvenNumbers[i] % 2 === 0) {
+    numberOfEvenNumbers++;
+  }
+}
+
+console.log("Even numbers count:", numberOfEvenNumbers);
+
+//
+
+/*
+
+  Write a function that takes a number as a parameter. The function should return
+  the sum of all the numbers in the even numbers 
+
+*/
+
+//function that takes a number as a parameter
+// define sum and initialize it to 0
+//loop through the numbers
+//if i is even, update sum + 1
+
+function getSumOfEvenNumbers(myArray) {
+  let sum = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i] % 2 === 0) {
+      sum += myArray[i];
+    }
+  }
+  return sum;
+}
+
+console.log(getSumOfEvenNumbers([2, 4, 6, 8, 7, 5])); //expected 20
+
+// for in loop
 
 const sister = { name: "Ava", age: 9, city: "Westminster" };
 
 for (let key in sister) {
   console.log(key, sister[key]);
 }
+
+//
 
 //Javascript questions
 //    PUT EVERYTHING TOGETHER...!
