@@ -330,3 +330,58 @@ function getMyCount(numberOfDonuts) {
 const myNumberOfDonuts = getMyCount(100);
 console.log(myNumberOfDonuts()); //100
 console.log(myNumberOfDonuts()); //101
+
+//claude ai
+
+//closures
+// a closure is when a function remembers variables from where it was created even after it leaves that place.
+
+function secretIngredient(secret) {
+  return function () {
+    return secret; // remembers the secret
+  };
+}
+
+const theSecretIngredient = secretIngredient("Custom Stellar Sauce");
+console.log(theSecretIngredient()); //the function remembers even though secretIngredient finished running already
+
+//with closures, the variables stay alive
+
+//chat
+
+//A closure is created when a function remembers and can access variables from its outer parent scope, even after that outer function has finished running.
+
+//closures are used all the time in JavaScipt
+
+//Javascript remembers closures but only remembers whats still reachable
+
+function createUser(name) {
+  let usersPin = 2026;
+
+  return {
+    getName() {
+      return name; //getName() uses name so JS keeps alive in memory
+    },
+  };
+}
+
+const user = createUser("Davonne");
+console.log(user.getName()); // Davonne
+
+//compared to
+
+function createNewUser(name) {
+  let usersCode = 4033;
+
+  return {
+    getUsersName() {
+      return name;
+    },
+    getCode() {
+      return usersCode;
+    },
+  };
+}
+
+const ourNewUser = createNewUser("Lexy");
+console.log(ourNewUser.getCode()); //expected 4033, usersCode is remembered because a function references it
