@@ -1,7 +1,7 @@
 /* Days of JavaScript
 
 Resources:
-
+- LeetCode 30 days of JavaScript 
 - Shruti Kapoor Youtube 31 days of JavaScript Questions  
   - https://www.youtube.com/watch?v=sHfWwFtr4uE
   - https://www.youtube.com/watch?v=Ap76_UnPeH4&t=31s
@@ -11,7 +11,7 @@ Resources:
 
 */
 
-//Day 1
+//Day 1:
 //Promises
 
 /*
@@ -45,8 +45,8 @@ function goGetIceCream() {
 }
 
 goGetIceCream()
-  .then((watchStrangerThings) => {
-    console.log("Watch Stranger Things");
+  .then((getToCoding) => {
+    console.log("It's coding time!");
   })
   .finally(() => {
     console.log("go to sleep");
@@ -254,3 +254,42 @@ const myFetchedNumber = async () => {
 };
 
 myFetchedNumber(); //expected 25
+
+//Day 2
+
+// 30 days of JavaScript in LeetCode
+
+/* 
+  Write a function createHelloWorld. It should return a new function that
+  always return "Hello World" 
+
+
+*/
+
+//create a function
+//it should return a new function
+//return hello world
+
+function createWorld() {
+  return () => "Hello did this work on January 8th 2025";
+}
+
+//other ways
+
+//functional expression
+const createWorld2 = () => {
+  return function () {
+    return "Hello World its January 8th 2026";
+  };
+};
+
+const helloWorld = createWorld2();
+console.log(helloWorld());
+
+//side note in typescript
+
+// function createHelloWorld2() {
+//   return function(): string {
+//     return "Hello World";
+//   }
+// }

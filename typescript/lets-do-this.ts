@@ -716,3 +716,19 @@ function getFirst<T>(arr: T[]): T {
 const firstNumber = getFirst([1, 2, 3]); //T is a number
 const firstString = getFirst(["lexy", "coco", "roxy"]); //T is a string
 const firstBoolean = getFirst([true, false]); // T is a boolean
+
+//
+
+/*
+
+  Write a function called isGreater that takes two 
+  arguments and returns true if the first number is greater
+  than the second number, and false other wise.
+
+*/
+
+function createHelloWorld2() {
+  return function (): string {
+    return "Hello World";
+  };
+}

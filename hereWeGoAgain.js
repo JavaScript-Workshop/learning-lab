@@ -2249,7 +2249,7 @@ console.log("Gryffindors Finest:", smartestWizard);
 //another one
 //define a an array of objects
 //find the weapon that meets all 3 conditions
-///find array method, callbackfunction
+///find array method, callback function
 // use logical and operator
 
 const inventory = [
