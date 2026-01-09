@@ -255,15 +255,13 @@ const myFetchedNumber = async () => {
 
 myFetchedNumber(); //expected 25
 
-//Day 2
-
 // 30 days of JavaScript in LeetCode
+
+// Day 1
 
 /* 
   Write a function createHelloWorld. It should return a new function that
   always return "Hello World" 
-
-
 */
 
 //create a function
@@ -293,3 +291,42 @@ console.log(helloWorld());
 //     return "Hello World";
 //   }
 // }
+
+// Day 2
+
+/*
+
+Given an integer n, return a counter function. This counter
+function initially returns n and then returns 1 more than 
+the previous value every subsequent time it is called. 
+
+*/
+
+//function takes n as a parameter
+//store n in a variable
+//return function return count + 1
+
+function createCounter(n) {
+  let count = n;
+
+  return function () {
+    return count++;
+  };
+}
+
+const myCounter = createCounter(50);
+console.log(myCounter()); //50
+console.log(myCounter()); //51
+console.log(myCounter()); //52
+
+//another way
+
+function getMyCount(numberOfDonuts) {
+  let count = numberOfDonuts;
+
+  return () => count++;
+}
+
+const myNumberOfDonuts = getMyCount(100);
+console.log(myNumberOfDonuts()); //100
+console.log(myNumberOfDonuts()); //101
