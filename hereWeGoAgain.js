@@ -2266,6 +2266,36 @@ const ourMenu = [
 const getBurger = ourMenu.find((item) => item.id === 2);
 console.log(getBurger); //expected {name: "Burger", id: 2}
 
+//increments / decrements
+// ++ means to add 1 from a variable
+// -- means subtract 1 from a variable
+
+//this is the same as
+let increaseThisNumber = 1000;
+increaseThisNumber = increaseThisNumber + 1;
+console.log(increaseThisNumber); //1001
+
+//this
+let myCount = 1000;
+myCount++;
+console.log(myCount); //1001
+
+//another one
+let decreaseThisNumber = 1000;
+decreaseThisNumber--;
+console.log(decreaseThisNumber); //999
+
+//in for loops counting up from 10
+for (let i = 10; i <= 20; i++) {
+  console.log(i);
+} //
+
+//counting down from 20
+
+for (let i = 20; i >= 10; i--) {
+  console.log(i);
+}
+
 //charAt() -  see line 1608 and below
 //Sets
 //Maps
