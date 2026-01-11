@@ -2200,7 +2200,7 @@ if (user === null) {
 //basic
 // array.reduce(reducerFunction, initialValue);
 
-// accumulator - the accumulated result from the previous interations
+// accumulator - the accumulated result from the previous iterations
 // currentValue - the current element being processed
 
 //instances to use reduce
@@ -2310,7 +2310,75 @@ for (let i = 20; i >= 10; i--) {
 //hoisting
 //closures
 
-//12-6-2025
+/*
+
+Chat
+
+Closures are a feature where a function remembers and can access variables from the place it was created, even after the outer function has finished running. 
+
+** A closure is when a function 
+
+ A closure is created when:
+  - a function is defined inside another function 
+  - the inner function uses variables from the outer function 
+
+*/
+
+function greetUser() {
+  let name = "Lexy";
+
+  //name is still remembered by the inner function because of the closure
+  //"the inner function closes over name"
+  return function () {
+    console.log("Welcome to our restaurant, we hope you enjoy", name);
+  };
+}
+
+const helloUser = greetUser();
+helloUser();
+
+/*
+Closures help you:
+ - keep things private
+ - remember state between function calls 
+- create things like counters, timers, and configurable functions 
+- see line 2234
+
+*/
+
+function secretRecipe() {
+  let recipe = [
+    "The perfect red onion,",
+    "Firm cucumber",
+    "Fresh Shrimp",
+    "Red chilis",
+    "Juicy limes",
+  ];
+  return function () {
+    return recipe;
+  };
+}
+
+const getSecretRecipe = secretRecipe();
+console.log("Aguachile:", getSecretRecipe()); // print array recipe
+
+//another one
+
+function buildThis() {
+  let arr = [];
+  for (let i = 0; i < 3; i++) {
+    arr.push(function () {
+      console.log("adds a function to the array:", i); //each function remembers the value i from its loop
+    });
+  }
+  return arr;
+}
+
+const didThisWork21 = buildThis();
+didThisWork21[0]();
+didThisWork21[1]();
+didThisWork21[2]();
+
 //Going over Javascript as a go through my React course to understand the course better
 
 //Array.find
