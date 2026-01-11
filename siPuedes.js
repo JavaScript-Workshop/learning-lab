@@ -385,3 +385,101 @@ function createNewUser(name) {
 
 const ourNewUser = createNewUser("Lexy");
 console.log(ourNewUser.getCode()); //expected 4033, usersCode is remembered because a function references it
+
+//Day 3
+
+/*
+
+  Write a function that helps developers test their code. It should take in any value val and return an object with the following two functions. 
+
+  toBe(val) accepts another value and returns true if the two values === each other. If they are not equal, it should throw an error "Not Equal".
+
+  notToBe(val) accepts another value and returns true if the two values !== each other. If they are equal, it should throw an error "Equal".
+  
+*/
+
+//a function that takes in any value
+//return an object with two functions
+//function 1, toBe, accepts a value, returns true if values === each other or else throw an error not equal
+
+//function 2 notToBe, accepts a value, returns true if the two values !-- each other, else throw an error equal
+
+function helpDevelopers(value) {
+  return {
+    toBe: function (areTheyEqual) {
+      if (value === areTheyEqual) {
+        return true;
+      }
+      throw new Error("Not Equal");
+    },
+    notToBe: function (notEqual) {
+      if (value !== notEqual) {
+        return true;
+      }
+      throw new Error("Equal");
+    },
+  };
+}
+
+console.log("This is true:", helpDevelopers(10).toBe(10)); //true
+// console.log("This is true:", expect(2).toBe(10)) //throws an error
+
+//Day 4 on LeetCode
+
+/*
+
+Write a function. It should accept an initial integer init. It should return an object with three functions
+
+The three functions:
+- increment() increase the current state value by 1 and 
+then returns it 
+
+- decrement() reduces the current value by 1 and returns 
+it
+
+- reset() sets the current value to init and returns it 
+
+*/
+
+//a function that accepts an initial integer init
+//define a variable to init
+//returns an object the three functions
+//increment, increase state by 1, return it
+//decrement, decrease the state by 1, return it
+//reset back to init
+
+function createCounterExample(init) {
+  let current = init;
+  return {
+    increment: function () {
+      current = current + 1;
+      return current;
+    },
+    decrement: function () {
+      current = current - 1;
+      return current;
+    },
+    reset: function () {
+      current = init;
+      return current;
+    },
+  };
+}
+
+const day4ExampleCounter = createCounterExample(10);
+console.log(day4ExampleCounter.increment()); //expected 11
+
+//another way to do this
+
+const thisIsAnotherCounterExample = (init) => {
+  let current = init;
+  return {
+    increment: () => ++current,
+    decrement: () => --current,
+    reset: () => (current = init),
+  };
+};
+
+const didThisCounterWork = thisIsAnotherCounterExample(10);
+
+console.log(didThisCounterWork.increment()); //expected 11
