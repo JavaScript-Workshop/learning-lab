@@ -257,6 +257,58 @@ myFetchedNumber(); //expected 25
 
 // 30 days of JavaScript in LeetCode
 
+//This section is about closures in JavaScript
+
+/*
+
+Chat
+
+Closures are a feature where a function remembers and can access variables from the place it was created, even after the outer function has finished running. 
+
+** A closure is when a function 
+
+ A closure is created when:
+  - a function is defined inside another function 
+  - the inner function uses variables from the outer function 
+
+
+Closures help you:
+ - keep things private
+ - remember state between function calls 
+- create things like counters, timers, and configurable functions 
+
+*/
+
+function outer() {
+  let thisIsMyCount = 1050;
+
+  //in this function inner remembers thisIsMyCount, even though outer() is done, thisIsMyCount still exists, that memory is a closure
+  function inner() {
+    thisIsMyCount++;
+    console.log("Did this work 1051:", thisIsMyCount);
+  }
+  return inner;
+}
+
+const didThisWork20 = outer();
+didThisWork20();
+
+// private variable example
+
+function secret() {
+  let myPassword = 1234;
+
+  return function () {
+    return myPassword;
+  };
+}
+
+const getPassword = secret();
+console.log("Password:", getPassword()); //1234
+
+//with this example, myPassword cannot be accessed directly.
+//only the returned function can access it
+
 // Day 1
 
 /* 
