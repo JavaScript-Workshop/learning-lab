@@ -537,3 +537,40 @@ const didThisCounterWork = thisIsAnotherCounterExample(10);
 console.log(didThisCounterWork.increment()); //expected 11
 
 //
+
+//Basic Array Transformations
+
+//Day 5
+
+/*
+
+ Given an integer array arr, and a mapping function, return a new array with a transformation applied to each element 
+
+ - solve it without the built in Array.map method
+
+*/
+
+//transformation: transforming it into something new
+//like just now in hereWeGoAgain.js when we looped over an array,
+//we made a new array of that array * 1.08, we transformed it
+
+//function that takes an array and a function
+//create an empty array result, this will store the transformed values
+//loop over the array
+//push the result with the callback function, passes in the current value and its index
+//return the result
+//test it out
+
+function map(arr, fn) {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    result.push(fn(arr[i], i));
+  }
+  return result;
+}
+
+const estosNumbers = [1, 2, 3, 4, 5];
+
+const doubleThis = map(estosNumbers, (num) => num * 2);
+console.log("Double estosNumbers variable:", doubleThis);

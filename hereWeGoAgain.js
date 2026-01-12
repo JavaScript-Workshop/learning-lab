@@ -2366,16 +2366,17 @@ console.log("Prices of Shirts with Tax:", taxTheseShirts);
 //define the prices of the pants
 //empty array for new value of taxed pants
 // loop through the array
+//round it
 
 const pricesOfPantalones = [20, 10, 30, 60, 80];
-const taxEstePantalones = [];
+const taxEstosPantalones = [];
 
 for (let i = 0; i < pricesOfPantalones.length; i++) {
   const priceWithTax = pricesOfPantalones[i] * 1.08;
-  taxEstePantalones.push(Math.round(priceWithTax)); //lets round the price though with Math.round
+  taxEstosPantalones.push(Math.round(priceWithTax)); //lets round the price though with Math.round
 }
 
-console.log("Prices of Pants with Tax:", taxEstePantalones);
+console.log("Prices of Pantalones with Tax:", taxEstosPantalones);
 
 //while loops
 //do, while
