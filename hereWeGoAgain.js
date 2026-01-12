@@ -2299,6 +2299,84 @@ for (let i = 20; i >= 10; i--) {
 //charAt() -  see line 1608 and below
 //Sets
 //Maps
+
+/*
+
+Array.map in a javascript array method that creates a new array by 
+running a function on every element of the original array. 
+
+- loops through an array
+- transforms each item
+- returns a new array 
+- does not change the original array 
+
+syntax: 
+
+array.map((item, index, array) => {
+ return newItem;})
+*/
+
+//define an array
+
+const theLotteryTicketWinnerNumbers = [4, 50, 85, 71, 3];
+
+//double the numbers
+
+const doubleLotteryTicketNumbers = theLotteryTicketWinnerNumbers.map(
+  (numbers) => numbers * 2
+);
+console.log("Double This:", doubleLotteryTicketNumbers);
+
+//another one
+
+const fastFoodRestaurants = [
+  { name: "McDonalds", specialty: "Big Mac" },
+  { name: "KFC", specialty: "Original Fried Chicken" },
+  { name: "Wendy's", specialty: "Baconator" },
+  { name: "Taco Bell", specialty: "Tacos" },
+  { name: "Wing Stop", specialty: "Hot Wings" },
+  { name: "Disney ++", specialty: "Movies and tvs" },
+];
+
+// const placesOfInterests = fastFoodRestaurants.map((restaurants) => {
+//   return restaurants.name;
+// });
+
+//you can also write it like
+const placesOfInterests = fastFoodRestaurants.map(
+  (restaurant) => restaurant.name
+);
+console.log("Dream Companies:", placesOfInterests);
+
+//your building a shopping cart. Add 8% sakes tax to each price
+
+//have the array of prices
+//map over each number with a 8% tax, 1.08
+
+const pricesOfShirts = [50, 60, 20, 10, 40];
+
+const taxTheseShirts = pricesOfShirts.map((prices) => {
+  return prices * 1.08;
+});
+
+console.log("Prices of Shirts with Tax:", taxTheseShirts);
+
+//same question but in a for loop
+
+//define the prices of the pants
+//empty array for new value of taxed pants
+// loop through the array
+
+const pricesOfPantalones = [20, 10, 30, 60, 80];
+const taxEstePantalones = [];
+
+for (let i = 0; i < pricesOfPantalones.length; i++) {
+  const priceWithTax = pricesOfPantalones[i] * 1.08;
+  taxEstePantalones.push(Math.round(priceWithTax)); //lets round the price though with Math.round
+}
+
+console.log("Prices of Pants with Tax:", taxEstePantalones);
+
 //while loops
 //do, while
 //for in

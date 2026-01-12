@@ -535,3 +535,5 @@ const thisIsAnotherCounterExample = (init) => {
 const didThisCounterWork = thisIsAnotherCounterExample(10);
 
 console.log(didThisCounterWork.increment()); //expected 11
+
+//
