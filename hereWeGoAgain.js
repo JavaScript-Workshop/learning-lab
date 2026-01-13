@@ -128,7 +128,9 @@ const favoriteSeaFood = [
 console.log(favoriteSeaFood.includes("Crab Legs")); //expected false
 
 //array prototype filter
+//mdn docs
 // creates a shallow copy of a portion of a given array
+//filtered down to the elements your looking for from the provided function
 //call back function
 
 const spyKidsCharacters = [
@@ -142,9 +144,14 @@ const spyKidsCharacters = [
 const filterNamesLongerThanFive = spyKidsCharacters.filter(
   (spyKidsCharacters) => spyKidsCharacters.length > 5
 );
+
 console.log(filterNamesLongerThanFive);
 
+//how i remember: what are you going to filter?  spyKidsCharacter--->.filer(spyKidsCharacter)
+//of course you can put it in a variable and console.log that
+
 //
+
 const drinks = [
   "Coke",
   "Pepsi",
@@ -159,6 +166,34 @@ const filterDrinksLongerThanFour = drinks.filter((drink) => drink.length > 4);
 console.log(filterDrinksLongerThanFour);
 
 //
+
+console.log("DAVONNE RIGHT HERE!");
+
+//Filter Even Numbers
+//create an array of numbers
+//create another variable, filter previous variable (my array), callback function, % 2 === 0
+//log it
+
+const powerBallNumbers = [1, 40, 30, 60, 32, 45, 78, 69, 80];
+
+const filterEvenNumbers = powerBallNumbers.filter((nums) => nums % 2 === 0);
+console.log("Did This Work on January 12th:", filterEvenNumbers);
+
+//
+
+//Filter available products
+//make an array of objects with products
+//filter through the products, in a variable
+
+const products = [
+  { name: "Nokia cell phone", inStock: true },
+  { name: "T-Mobile SideKick", inStock: false },
+  { name: "Trampoline", inStock: true },
+  { name: "Basketball Hoop", inStock: false },
+];
+
+const itemsInStock = products.filter((product) => product.inStock);
+console.log("Products in stock:", itemsInStock);
 
 //array method forEach
 //a callback function

@@ -11,7 +11,6 @@ Resources:
 
 */
 
-//Day 1:
 //Promises
 
 /*
@@ -574,3 +573,21 @@ const estosNumbers = [1, 2, 3, 4, 5];
 
 const doubleThis = map(estosNumbers, (num) => num * 2);
 console.log("Double estosNumbers variable:", doubleThis);
+
+//Day 6
+
+/*
+
+Given an integer array arr and fitering function fn, return a filtered array 
+
+the fn takes one or two arguments
+
+arr[i] - number from the arr 
+i - index of arr[i]
+
+filteredArr should only contain the elements from the arr for which the expression fn(arr[i], 1) evaluates to a truthy value. 
+A truthy value is a value where Boolean(value) returns tree. 
+
+- said not to solve with built in Array.filter
+
+*/
