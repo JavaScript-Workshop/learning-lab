@@ -578,7 +578,7 @@ console.log("Double estosNumbers variable:", doubleThis);
 
 /*
 
-Given an integer array arr and fitering function fn, return a filtered array 
+Given an integer array arr and filtering function fn, return a filtered array 
 
 the fn takes one or two arguments
 
@@ -586,8 +586,30 @@ arr[i] - number from the arr
 i - index of arr[i]
 
 filteredArr should only contain the elements from the arr for which the expression fn(arr[i], 1) evaluates to a truthy value. 
-A truthy value is a value where Boolean(value) returns tree. 
+A truthy value is a value where Boolean(value) returns true. 
 
 - said not to solve with built in Array.filter
 
 */
+
+//function, takes an array and a function
+//loop through the array
+//call function passing the value and index
+//if the function returns true keep the value
+//return the filtered array
+
+function filteredArray(arr, fn) {
+  const filteredArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i], i)) {
+      filteredArray.push(arr[i]);
+    }
+  }
+  return filteredArray;
+}
+
+const didThisWork23 = [1, 2, 4, 4, 5];
+
+const getEvens = filteredArray(didThisWork23, (num) => num % 2 === 0);
+console.log("Right here evens:", getEvens);
