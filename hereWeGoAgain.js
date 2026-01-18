@@ -128,6 +128,8 @@ const favoriteSeaFood = [
 console.log(favoriteSeaFood.includes("Crab Legs")); //expected false
 
 //array prototype filter
+//creates a new array with elements that pass a certain test
+//from dev. you can also use a for loop, and a temporary array to store the filtered elements.
 //mdn docs
 // creates a shallow copy of a portion of a given array
 //filtered down to the elements your looking for from the provided function
@@ -2283,6 +2285,8 @@ const total = prices.reduce((acc, price) => {
 
 console.log(total);
 
+//otra vez
+
 // Going through Traversy Media React Course
 //going over Javascript as I go
 
@@ -2550,4 +2554,58 @@ const bestWeapon = inventory.find(
     weapon.rarity === "common" &&
     weapon.enchanted === false
 );
-console.log("Best Weapon:", bestWeapon); //sowd object
+console.log("Best Weapon:", bestWeapon);
+
+//Working my way through Travery Media React Course
+
+//going over Array.reduce
+// see more at line 2233
+
+//reduce is for turning an array into a single meaningful result
+//take this, and turn it into one thing
+//used on totals, summary, adding things up, cart totals, group data
+
+//basic shape
+/*
+    array1.reduce((accumulator, currentValue) => {
+        return newAccumulator;
+    }, startingValue) */
+
+const myOrderTotal = [20, 10, 10, 8, 20];
+
+const orderTotal = myOrderTotal.reduce((acc, price) => {
+  return acc + price;
+}, 0);
+
+console.log(`My Total: $${orderTotal}`); //68
+
+//now with a for loop
+
+const entreePrice = [50, 20, 30, 40];
+
+let restaurantTotal = 0;
+
+for (let i = 0; i < entreePrice.length; i++) {
+  restaurantTotal += entreePrice[i];
+}
+
+console.log(`The Spot Total: $${restaurantTotal}`); //140
+
+//another one
+
+//Find the highest number in the array
+
+//define an array of numbers
+//reduce it, array method with acc, and score
+//score is higher return score
+
+const scores = [70, 80, 90, 100];
+
+const highestGrade = scores.reduce((acc, score) => {
+  if (score > acc) {
+    return score;
+  }
+  return acc;
+}, scores[0]);
+
+console.log(highestGrade); //100
