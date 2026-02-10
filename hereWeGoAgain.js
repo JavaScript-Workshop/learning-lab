@@ -144,7 +144,7 @@ const spyKidsCharacters = [
   "Gerti",
 ];
 const filterNamesLongerThanFive = spyKidsCharacters.filter(
-  (spyKidsCharacters) => spyKidsCharacters.length > 5
+  (spyKidsCharacters) => spyKidsCharacters.length > 5,
 );
 
 console.log(filterNamesLongerThanFive);
@@ -203,7 +203,7 @@ console.log("Products in stock:", itemsInStock);
 
 const twlightBooks = ["Twlight", "New Moon", "Eclipse", "Breaking Dawn"];
 const favBooks = twlightBooks.forEach((book) =>
-  console.log(`${book} is one of my favorite books to read`)
+  console.log(`${book} is one of my favorite books to read`),
 );
 
 //
@@ -247,7 +247,7 @@ const typesOfPhones = ["iPhone", "Samsung", "Blackberry", "Google", "Galaxy"];
 
 const phone = typesOfPhones.forEach((phone) => {
   console.log(
-    `Big business, make a lot of money for mobile phones. ${phone} is a major selling mobile phone.`
+    `Big business, make a lot of money for mobile phones. ${phone} is a major selling mobile phone.`,
   );
 });
 
@@ -266,7 +266,7 @@ const ourPizzaToppings = [
 
 const singleTopping = ourPizzaToppings.forEach((topping) => {
   console.log(
-    `We have a lot of toppings at our Pizza Parlor. ${topping} is one of our toppings`
+    `We have a lot of toppings at our Pizza Parlor. ${topping} is one of our toppings`,
   );
 });
 
@@ -284,8 +284,8 @@ console.log("What is Networking?", network);
 
 const whatToTalkAbout = network.forEach((interaction) =>
   console.log(
-    `There are many ways one can network. In a nutshell networking is ${interaction} `
-  )
+    `There are many ways one can network. In a nutshell networking is ${interaction} `,
+  ),
 );
 
 //array prototype sort();
@@ -656,7 +656,26 @@ myFavorites.favQuote();
 //
 
 //spread operator
+//lets you expand, aka spread out
 //used to expand an array, string, object, into individual elements
+
+console.log("right here 2-7-26");
+//with arrays
+const salePrices = [10, 4, 3];
+console.log([...salePrices]);
+
+//
+
+const myArray1 = [1, 4];
+const myArray2 = [5, 7];
+
+const combinedArray = [...myArray1, ...myArray2];
+console.log(combinedArray);
+
+//adding elements
+const hamburgerHelperEditions = [2, 3];
+const limitedEditions = [1, ...hamburgerHelperEditions, 4];
+console.log(limitedEditions); //expected [1,2,3,4]
 
 function sumArr(a, b, c) {
   return a + b + c;
@@ -665,6 +684,7 @@ function sumArr(a, b, c) {
 const test = [7, 1, 2];
 console.log(sumArr(...test));
 
+//mas spread operator
 //more ways to use spread
 
 const businessNeeds = ["advertisement", "customers", "employees"];
@@ -708,6 +728,60 @@ const user = {
 
 const updatedUser = { ...user, location: "Italy" }; //using spread operator to add og object and add a new property to the object to a value
 console.log("user:", updatedUser);
+
+//
+const wingsToGoOrder1 = {
+  number: 1,
+  name: "Jill",
+  delivery: false,
+  order: ["50 piece hot wings", "Large Fries", "Large Pepsi"],
+};
+
+console.log("Customer Order 1:", wingsToGoOrder1);
+
+//
+
+const wingToGoOrder2 = {
+  number: 2,
+  name: "Daisy",
+  delivery: true,
+  order: ["30 Tenders, 2 Large Fries, 1 large ranch"],
+};
+
+// console.log([...wingToGoOrder2]); //welp turns out objects do not have built in iteration, it is not iterable
+
+//if you want to get the the keys of the object, do this, //Object.keys
+console.log(Object.keys(wingToGoOrder2));
+
+//if you want the object key value pairs, do this, //Object.enteries
+console.log(Object.entries(wingToGoOrder2));
+
+//you can though copy the object
+const thisIsACopy = { ...wingToGoOrder2 };
+console.log("This is a copy", thisIsACopy);
+
+//so now you can add it to another object
+
+const continuedOrderForOrder2 = {
+  ...wingToGoOrder2,
+  tip: 10,
+  sauce: "Buffalo",
+  delivery: false, // you can also over ride from first object
+};
+
+console.log("Order 2:", continuedOrderForOrder2);
+
+//and now spread operator in. functions
+function hello(name1, name2, name3, name4) {
+  console.log(`Hi ${name1}, ${name2}, ${name3}, ${name4}, did this work`);
+}
+
+hello("Candy", "Kitkat", "Herseys", "Sour patch");
+
+//or spread
+
+const myPerros = ["Roxy", "Lexy", "Coco", "Daisy"];
+hello(...myPerros); //call the function, but spread the variable myPerros that define the names
 
 //rest operator
 //spread operator compared to rest
@@ -1378,7 +1452,7 @@ const dinner1 = new Dinner(
   "Bean Tacos",
   "Beans, Tortillas, Chorizo, Oil",
   "Put beans into tortilla into tacos, seal them, and then fry in oil",
-  "Rice"
+  "Rice",
 );
 console.log(dinner1);
 
@@ -1386,7 +1460,7 @@ const dinner2 = new Dinner(
   "Ceviche",
   "Shrimp, lime, serrano peppers, red onion, tomatoes, red chili peppers, tostadas",
   "Peal and clean shrimp, cut vegetables, cook shrimp in lime, put everything together",
-  "Cooked Shrimp"
+  "Cooked Shrimp",
 );
 console.log(dinner2);
 
@@ -1407,7 +1481,7 @@ const christmasMovie1 = new ChristmasMovie(
   "How The Grinch Stole Christmas",
   2000,
   "family",
-  "G"
+  "G",
 );
 
 console.log(christmasMovie1);
@@ -1417,7 +1491,7 @@ const christmasMovie2 = new ChristmasMovie(
   "The Santa Clause",
   1998,
   "comedy",
-  "G"
+  "G",
 );
 console.log(christmasMovie2);
 
@@ -1448,7 +1522,7 @@ const gamePlan15 = new GamePlan(
   "React Hooks",
   "React is it",
   "Docs, Courses, Peers",
-  " What is Java?"
+  " What is Java?",
 );
 console.log(gamePlan15);
 
@@ -1467,7 +1541,7 @@ const holidaySnack1 = new HolidaySnack(
   "Chocolate Chip Cookies",
   "Chocolate chips",
   78,
-  9
+  9,
 );
 const holidaySnack2 = new HolidaySnack("Smores", "Marsh mellows", 197, 10);
 
@@ -2362,7 +2436,7 @@ const theLotteryTicketWinnerNumbers = [4, 50, 85, 71, 3];
 //double the numbers
 
 const doubleLotteryTicketNumbers = theLotteryTicketWinnerNumbers.map(
-  (numbers) => numbers * 2
+  (numbers) => numbers * 2,
 );
 console.log("Double This:", doubleLotteryTicketNumbers);
 
@@ -2383,7 +2457,7 @@ const fastFoodRestaurants = [
 
 //you can also write it like
 const placesOfInterests = fastFoodRestaurants.map(
-  (restaurant) => restaurant.name
+  (restaurant) => restaurant.name,
 );
 console.log("Dream Companies:", placesOfInterests);
 
@@ -2511,7 +2585,7 @@ const myFavoriteHpMovie = howManyHarryPotterMovies.find((movie) => movie > 3);
 
 console.log(
   "Favorite Harry Potter Movie besides Number one of course",
-  myFavoriteHpMovie
+  myFavoriteHpMovie,
 ); //expected 4
 
 //another one
@@ -2552,7 +2626,7 @@ const bestWeapon = inventory.find(
   (weapon) =>
     weapon.damage > 7 &&
     weapon.rarity === "common" &&
-    weapon.enchanted === false
+    weapon.enchanted === false,
 );
 console.log("Best Weapon:", bestWeapon);
 
