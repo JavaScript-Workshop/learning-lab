@@ -69,6 +69,10 @@ let water: string = "A must";
 let videoGame: string = "Call of Duty";
 let placeOfWork: string = "Amazon";
 let goals: string = "Fullstack Web App";
+let letsCode: string = "here we go!";
+let codeTime: string = "its now or never";
+
+console.log(codeTime);
 
 //
 let me: string = "Davonne";
@@ -80,6 +84,9 @@ console.log(typeof mySecondLineOfTypeScript); //expect string
 
 let favoriteColor: string = "pink";
 console.log(typeof favoriteColor);
+
+let menu: string = "This is our menu";
+let customMenu: string = "Custom menu for our app users";
 
 //Array type
 let whereIWantToVisit: string[] = [
@@ -95,6 +102,11 @@ console.log(typeof whereIWantToVisit);
 //
 let favNumbers: number[] = [7, 15, 29, 21];
 console.log(favNumbers);
+
+//
+let favoriteMovies2: string[] = ["Grease", "Grease 2", "Smart House", "Zeon"];
+
+console.log("Some of my favorite movies:", favoriteMovies2);
 
 //
 
@@ -211,6 +223,14 @@ console.log("Favorite Movies: ", favoriteMovies);
 const needToDos: Array<string> = ["React course", "Fullstack Project", "Java"];
 
 console.log("A must:", needToDos);
+
+//Functions
+
+function multiplyThis(firstNumber: number, secondNumber: number) {
+  return firstNumber * secondNumber;
+}
+
+console.log(multiplyThis(10, 10)); //expected 100
 
 //Why use Types?
 
@@ -332,7 +352,7 @@ function sendEmailOneMoreTime(user: User): string {
 }
 
 console.log(
-  sendEmailOneMoreTime({ name: "Jasmine Deleon", email: "didThisWork.com" })
+  sendEmailOneMoreTime({ name: "Jasmine Deleon", email: "didThisWork.com" }),
 );
 
 //another one
@@ -373,7 +393,7 @@ console.log(
     deal: true,
     description: "High-quality wireless earbuds",
     category: "headphones",
-  })
+  }),
 );
 
 console.log(
@@ -384,7 +404,7 @@ console.log(
     deal: false,
     description: "High-quality wireless AI powered earbuds",
     category: "headphones",
-  })
+  }),
 );
 
 //another one
@@ -462,8 +482,8 @@ function sendPost(title: string, description: string) {
 console.log(
   sendPost(
     "New Year, New Me 2026",
-    "Taking it step by step and level up in web dev."
-  )
+    "Taking it step by step and level up in web dev.",
+  ),
 );
 
 //

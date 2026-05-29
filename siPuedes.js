@@ -2,7 +2,7 @@
 
 Resources:
 - LeetCode 30 days of JavaScript 
-- Shruti Kapoor Youtube 31 days of JavaScript Questions  
+- Shruti Kapoor Youtube JavaScript Questions  
   - https://www.youtube.com/watch?v=sHfWwFtr4uE
   - https://www.youtube.com/watch?v=Ap76_UnPeH4&t=31s
 - MDN 
@@ -308,7 +308,6 @@ console.log("Password:", getPassword()); //1234
 //with this example, myPassword cannot be accessed directly.
 //only the returned function can access it
 
-// Day 1
 
 /* 
   Write a function createHelloWorld. It should return a new function that
@@ -322,6 +321,7 @@ console.log("Password:", getPassword()); //1234
 function createWorld() {
   return () => "Hello did this work on January 8th 2025";
 }
+
 
 //other ways
 
@@ -343,7 +343,6 @@ console.log(helloWorld());
 //   }
 // }
 
-// Day 2
 
 /*
 
@@ -437,7 +436,6 @@ function createNewUser(name) {
 const ourNewUser = createNewUser("Lexy");
 console.log(ourNewUser.getCode()); //expected 4033, usersCode is remembered because a function references it
 
-//Day 3
 
 /*
 
@@ -475,7 +473,7 @@ function helpDevelopers(value) {
 console.log("This is true:", helpDevelopers(10).toBe(10)); //true
 // console.log("This is true:", expect(2).toBe(10)) //throws an error
 
-//Day 4 on LeetCode
+//Leetcode
 
 /*
 
@@ -539,7 +537,6 @@ console.log(didThisCounterWork.increment()); //expected 11
 
 //Basic Array Transformations
 
-//Day 5
 
 /*
 
@@ -574,7 +571,6 @@ const estosNumbers = [1, 2, 3, 4, 5];
 const doubleThis = map(estosNumbers, (num) => num * 2);
 console.log("Double estosNumbers variable:", doubleThis);
 
-//Day 6
 
 /*
 
@@ -613,3 +609,6 @@ const didThisWork23 = [1, 2, 4, 4, 5];
 
 const getEvens = filteredArray(didThisWork23, (num) => num % 2 === 0);
 console.log("Right here evens:", getEvens);
+
+
+

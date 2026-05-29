@@ -51,6 +51,9 @@ var water = "A must";
 var videoGame = "Call of Duty";
 var placeOfWork = "Amazon";
 var goals = "Fullstack Web App";
+var letsCode = "here we go!";
+var codeTime = "its now or never";
+console.log(codeTime);
 //
 var me = "Davonne";
 console.log(typeof me);
@@ -58,6 +61,8 @@ var mySecondLineOfTypeScript = "This is a language being learned in a lot of com
 console.log(typeof mySecondLineOfTypeScript); //expect string
 var favoriteColor = "pink";
 console.log(typeof favoriteColor);
+var menu = "This is our menu";
+var customMenu = "Custom menu for our app users";
 //Array type
 var whereIWantToVisit = [
     "Rome",
@@ -70,6 +75,9 @@ console.log(typeof whereIWantToVisit);
 //
 var favNumbers = [7, 15, 29, 21];
 console.log(favNumbers);
+//
+var favoriteMovies2 = ["Grease", "Grease 2", "Smart House", "Zeon"];
+console.log("Some of my favorite movies:", favoriteMovies2);
 //
 var toDoList = ["TypeScript", "JavaScript", "Code Review"];
 console.log(toDoList);
@@ -152,6 +160,11 @@ console.log("Favorite Movies: ", favoriteMovies);
 //
 var needToDos = ["React course", "Fullstack Project", "Java"];
 console.log("A must:", needToDos);
+//Functions
+function multiplyThis(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+}
+console.log(multiplyThis(10, 10)); //expected 100
 //Why use Types?
 //regular JavaScript - what do you see
 // function greet(name) {
@@ -413,5 +426,19 @@ console.log(showTheNumber24);
 function getFirst(arr) {
     return arr[0];
 }
-var firstNumber = getFirst([1, 2, 3]);
-console.log(firstNumber); //expected 1
+var firstNumber = getFirst([1, 2, 3]); //T is a number
+var firstString = getFirst(["lexy", "coco", "roxy"]); //T is a string
+var firstBoolean = getFirst([true, false]); // T is a boolean
+//
+/*
+
+  Write a function called isGreater that takes two
+  arguments and returns true if the first number is greater
+  than the second number, and false other wise.
+
+*/
+function createHelloWorld2() {
+    return function () {
+        return "Hello World";
+    };
+}

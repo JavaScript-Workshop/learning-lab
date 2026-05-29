@@ -197,6 +197,10 @@ const products = [
 const itemsInStock = products.filter((product) => product.inStock);
 console.log("Products in stock:", itemsInStock);
 
+
+
+//
+
 //array method forEach
 //a callback function
 // A function to execute for each element in the array.
@@ -2639,6 +2643,9 @@ console.log("Best Weapon:", bestWeapon);
 //take this, and turn it into one thing
 //used on totals, summary, adding things up, cart totals, group data
 
+//reduce is an array method that iterates over every element and accumulates them into
+//a single output value, a number, string, object, array anything.
+
 //basic shape
 /*
     array1.reduce((accumulator, currentValue) => {
@@ -2652,6 +2659,21 @@ const orderTotal = myOrderTotal.reduce((acc, price) => {
 }, 0);
 
 console.log(`My Total: $${orderTotal}`); //68
+
+//uno mas
+
+const myCart = [
+  { item: "hamburger", price: 7.99 },
+  { item: "hot dog", price: 1.99 },
+  { item: "pizza", price: 3.5 },
+  { item: "popcorn", price: 0.99 },
+];
+
+const cartTotal = myCart.reduce((acc, item) => {
+  return acc + item.price;
+}, 0); //acc start at 0 
+
+console.log(`My Cart total: ${cartTotal}`);
 
 //now with a for loop
 
@@ -2683,3 +2705,6 @@ const highestGrade = scores.reduce((acc, score) => {
 }, scores[0]);
 
 console.log(highestGrade); //100
+
+//another one
+
