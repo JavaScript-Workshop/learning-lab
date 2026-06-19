@@ -84,6 +84,28 @@ console.log(toDoList);
 //
 var myDogs = ["Maryjane", "Roxy", "Lexy", "Coco", "Daisy"];
 console.log(typeof myDogs, myDogs);
+//
+var cheeseBurgerReciepe = [
+    "burger",
+    "cheese",
+    "mayo",
+    "tomatoe",
+    "lettuce",
+];
+console.log("Cheeseburger Reciepe:", cheeseBurgerReciepe);
+console.log(typeof cheeseBurgerReciepe); //yess it is an array but in javascript, arrays are objects. so the type of expected is object
+var neverGiveUp = [
+    "focus",
+    "plan",
+    "determination",
+    "mindset",
+    "gaols",
+    "support",
+];
+//if you really wanna see if its an array
+//do this
+var isThisAnArray = Array.isArray(cheeseBurgerReciepe);
+console.log(isThisAnArray); //expected true;
 //ts tells us if the type is wrong
 // let failingGrade: string[] = [64, 63, 62, 61, 60, 59];
 //
@@ -94,16 +116,35 @@ var age = 31;
 var drinkingAge = 21;
 console.log(drinkingAge);
 var numberOfDog = 5;
+<<<<<<< HEAD
 //Boolean type
 var isActive = true;
 var isComplete = true;
 var isLocked = false;
 var isOpened = true;
+=======
+var numberOfDeals = 20;
+//Boolean type
+var isActive = true;
+var isComplete = true;
+var isOnSale = true;
+var isNotOnSale = false;
+var isLocked = false;
+var isOpened = true;
+var hasDeal = true;
+var openForTheHolidays = false;
+var openFor24Hours = true;
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 //any type
 //enables type checking and doesn't refer to any specific type of data
 //allows any type really
 //only used in extreme scenarios
 var numberOfUsers = 10000;
+<<<<<<< HEAD
+=======
+var coupon = "Unlimited";
+var anyDiscount = "Discounted Price";
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 //you can create an empty variable, with disabled type checking
 var myRandomVariable;
 //unknown type
@@ -125,6 +166,8 @@ var oneMoreTime = "time";
 var testing4321 = "did this work";
 var answer = "yes it did, good job";
 console.log(answer);
+var rideAlong = "cops giving a celevberity a ride in thier cop car and daily route";
+var loveBug = "Song: Jonas Brothers";
 //
 var learningTypescript = "Learning is a process";
 var oneStep = "One step at a time";
@@ -143,10 +186,67 @@ var experienceSoFar = [
 ];
 //dive deeper into: Backend, Java??!
 console.log("Davonne:", experienceSoFar);
+//
+var topFastFoodRestaurants = [
+    "McDonalds",
+    "Wendys",
+    "Taco Bell",
+    "KFC",
+    "Pizza Hut",
+];
+var myFavFastFoodRestaurants = topFastFoodRestaurants[0];
+var mySecondFavFastFoodRestaurants = topFastFoodRestaurants[0];
+console.log("My favorite fast food place:", myFavFastFoodRestaurants);
+//for funzzies
+var didThisWork3 = topFastFoodRestaurants.forEach(function (restaurant) {
+    if (restaurant === "KFC") {
+        console.log(restaurant);
+    }
+});
 //otra vez
 //you can also do an array this way. Array<string> syntax
 var favoriteColors = ["pink", "black", "green", "purple"];
 console.log("My favorite colors:", favoriteColors);
+//
+<<<<<<< HEAD
+var favoriteMovies = [
+    "Lord of The Rings",
+    "Harry Potter",
+    "Scream",
+    "Twlight",
+    "Like Mike",
+    "Toy Story",
+];
+console.log("Favorite Movies: ", favoriteMovies);
+//
+=======
+var favoriteDisneyMovies = [
+    "Halowween Town Movies",
+    "Twtiches",
+    "Don't look under the bed",
+    "Cheetah Girls",
+    "Brink!",
+    "The Luck of the Irish",
+    "Zeon Movies",
+];
+console.log("My favorite Disney Movies:", favoriteDisneyMovies);
+//
+var halowweenTown4Theory = [
+    "the cromwell family are really powerful",
+    "aggie father is mervin, marlin's cousin?",
+    "aggie was queen of halloweentown in her time, at the start of halloweentown",
+    "the snot guy, he is related to Luke somehow",
+    "they switched Marnies because the new actress was new to the disney/hollywood scene",
+];
+//
+var favoriteMeals = [
+    "Chicken Fried Rice",
+    "Hot Wings",
+    "Pasta",
+    "Ceviche",
+    "Beans, Chile and Rice",
+];
+console.log("My favorite Meals:", favoriteMeals);
 //
 var favoriteMovies = [
     "Lord of The Rings",
@@ -158,6 +258,7 @@ var favoriteMovies = [
 ];
 console.log("Favorite Movies: ", favoriteMovies);
 //
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 var needToDos = ["React course", "Fullstack Project", "Java"];
 console.log("A must:", needToDos);
 //Functions
@@ -165,6 +266,38 @@ function multiplyThis(firstNumber, secondNumber) {
     return firstNumber * secondNumber;
 }
 console.log(multiplyThis(10, 10)); //expected 100
+<<<<<<< HEAD
+=======
+//
+//otra vez
+function multiplyThisAgain(fryCount, fryCraving) {
+    return fryCount * fryCraving;
+}
+console.log(multiplyThisAgain(40, 60)); //expected 2400
+//
+function clockOut(clockOutTime, actualClockOutTime) {
+    return clockOutTime * actualClockOutTime;
+}
+//
+function greet(name) {
+    return "Hey ".concat(name, " its almost June 1st 2026");
+}
+var message = greet("Jasmine");
+console.log(message);
+//
+function annHathawaysMovie(name) {
+    return "".concat(name, " is a Ann Hathaway movie.");
+}
+var movie1 = annHathawaysMovie("Ella Enchanted");
+console.log(movie1);
+//
+function favoriteHalloweenMovie(name) {
+    return "".concat(name, " is my favorite scary Halloween movie.");
+}
+var favHalloweenMovie = favoriteHalloweenMovie("Scream");
+console.log(favHalloweenMovie);
+//const
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 //Why use Types?
 //regular JavaScript - what do you see
 // function greet(name) {
@@ -178,6 +311,15 @@ function helloThere(name) {
     return "Hello ".concat(name.toUpperCase());
 }
 console.log(helloThere("Davonne007"));
+<<<<<<< HEAD
+=======
+//
+function megaMeal(name) {
+    return "".concat(name, " is the Mega Deal for $4.99");
+}
+var megaMeal1 = megaMeal("McNugget Special");
+console.log("Daily Deals:", megaMeal1);
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 // And were back..! Lets get into Typescript again
 //strings
 var foodTruck = "Ceviche Time";
@@ -187,6 +329,10 @@ var myFreelanceBusiness = "Djvd Web Services";
 //more strings
 var nickName = "Vonney";
 var dogBreed = "Boxer";
+<<<<<<< HEAD
+=======
+var disneyShow = "Lizzie McGuire";
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 var secondNickName = "Davonneizzle";
 console.log("My Gamer Tag:", secondNickName);
 //? means optional
@@ -430,6 +576,22 @@ var firstNumber = getFirst([1, 2, 3]); //T is a number
 var firstString = getFirst(["lexy", "coco", "roxy"]); //T is a string
 var firstBoolean = getFirst([true, false]); // T is a boolean
 //
+<<<<<<< HEAD
+=======
+function createHelloWorld2(name) {
+    return function () {
+        return "Hello ".concat(name, " its a whole new world");
+    };
+}
+var didThisWork2 = createHelloWorld2("Jasmine"); //didThisWork 2 stores the function
+console.log(didThisWork2()); //executes the stored function and returns the string
+/*
+
+this is also an example of a closure because the inner
+function rembers the name variable even after createHelloWorld2 has finished running
+
+*/
+>>>>>>> b9a0ac5 (lets go: working on typescript)
 /*
 
   Write a function called isGreater that takes two
@@ -437,8 +599,11 @@ var firstBoolean = getFirst([true, false]); // T is a boolean
   than the second number, and false other wise.
 
 */
+<<<<<<< HEAD
 function createHelloWorld2() {
     return function () {
         return "Hello World";
     };
 }
+=======
+>>>>>>> b9a0ac5 (lets go: working on typescript)
