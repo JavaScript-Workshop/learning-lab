@@ -50,6 +50,8 @@ function myGrowth() {
 myGrowth();
 
 //Strings
+// strings are immutable, you cannot alter the string, if you want to you need to have a new variable to change it
+
 let string = "This is a string";
 console.log(string);
 
@@ -64,6 +66,28 @@ console.log(autumn);
 const trimMyHair = "     I need to get a haircut!              ";
 console.log(trimMyHair);
 console.log(trimMyHair.trim());
+
+//operators
+//comparison operators  ===, !==,
+// >, < >=, >=
+// +=, +,
+//Free code camp definition:
+//The += operator is useful when building up a
+//string step by step or appending new content to an existing string variable.
+
+//concat() method
+//join two strings together
+// have a space in bwtween the words
+//obiviously declared by variables
+
+//concat is useful when you want to concatenate multiple
+//strings together
+
+let stringOne = "Hello";
+let stringTwo = "Moto";
+
+let stringResult = stringOne.concat(" ", stringTwo);
+console.log(stringResult);
 
 //Arrays
 let hundredDollarsBills = [
@@ -196,8 +220,6 @@ const products = [
 
 const itemsInStock = products.filter((product) => product.inStock);
 console.log("Products in stock:", itemsInStock);
-
-
 
 //
 
@@ -468,6 +490,21 @@ const levelUp = () => {
 levelUp();
 
 //if statements / else if /else
+
+//testing if condiotions are true
+//if this is true, do this
+//if a condition is met, you can have any number of statements execute
+
+/*
+let whatDoesAIDo = "productiivty, curiousity, knowledge";
+let myQuestion = prompt("what do you use AI for?");
+
+if (myQuestion === whatDoesAIDo) {
+  alert("Very nice. How do you use it for productivity?");
+}
+
+  */
+
 // let legalDrinkingAge = 21;
 // let howOldAreYou = prompt("How old are you");
 
@@ -2671,7 +2708,7 @@ const myCart = [
 
 const cartTotal = myCart.reduce((acc, item) => {
   return acc + item.price;
-}, 0); //acc start at 0 
+}, 0); //acc start at 0
 
 console.log(`My Cart total: ${cartTotal}`);
 
@@ -2708,3 +2745,30 @@ console.log(highestGrade); //100
 
 //another one
 
+//otra vez Fizz Buzz
+
+/*
+Write a JavaScript program that prints the numbers from 1 to 30.
+
+But:
+
+If a number is divisible by 3, print "Fizz" instead of the number.
+If a number is divisible by 5, print "Buzz" instead of the number.
+If a number is divisible by both 3 and 5, print "FizzBuzz".
+
+*/
+const letsDoThisAgain = () => {
+  for (let i = 1; i <= 30; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+};
+
+letsDoThisAgain();

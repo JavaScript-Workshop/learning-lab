@@ -169,10 +169,6 @@ let numberOfDeals: number = 20;
 
 let isActive: boolean = true;
 let isComplete: boolean = true;
-<<<<<<< HEAD
-let isLocked: boolean = false;
-let isOpened: boolean = true;
-=======
 let isOnSale: boolean = true;
 let isNotOnSale: boolean = false;
 let isLocked: boolean = false;
@@ -180,7 +176,6 @@ let isOpened: boolean = true;
 let hasDeal: boolean = true;
 let openForTheHolidays: boolean = false;
 let openFor24Hours: boolean = true;
->>>>>>> b9a0ac5 (lets go: working on typescript)
 
 //any type
 //enables type checking and doesn't refer to any specific type of data
@@ -274,21 +269,6 @@ const favoriteColors: Array<string> = ["pink", "black", "green", "purple"];
 console.log("My favorite colors:", favoriteColors);
 
 //
-<<<<<<< HEAD
-
-const favoriteMovies: Array<string> = [
-  "Lord of The Rings",
-  "Harry Potter",
-  "Scream",
-  "Twlight",
-  "Like Mike",
-  "Toy Story",
-];
-console.log("Favorite Movies: ", favoriteMovies);
-
-//
-
-=======
 const favoriteDisneyMovies: Array<string> = [
   "Halowween Town Movies",
   "Twtiches",
@@ -337,7 +317,6 @@ console.log("Favorite Movies: ", favoriteMovies);
 
 //
 
->>>>>>> b9a0ac5 (lets go: working on typescript)
 const needToDos: Array<string> = ["React course", "Fullstack Project", "Java"];
 
 console.log("A must:", needToDos);
@@ -350,8 +329,6 @@ function multiplyThis(firstNumber: number, secondNumber: number) {
 
 console.log(multiplyThis(10, 10)); //expected 100
 
-<<<<<<< HEAD
-=======
 //
 
 //otra vez
@@ -393,7 +370,6 @@ console.log(favHalloweenMovie);
 
 //const
 
->>>>>>> b9a0ac5 (lets go: working on typescript)
 //Why use Types?
 
 //regular JavaScript - what do you see
@@ -413,8 +389,6 @@ function helloThere(name: string): string {
 
 console.log(helloThere("Davonne007"));
 
-<<<<<<< HEAD
-=======
 //
 function megaMeal(name: string): string {
   return `${name} is the Mega Deal for $4.99`;
@@ -423,7 +397,6 @@ function megaMeal(name: string): string {
 const megaMeal1 = megaMeal("McNugget Special");
 console.log("Daily Deals:", megaMeal1);
 
->>>>>>> b9a0ac5 (lets go: working on typescript)
 // And were back..! Lets get into Typescript again
 
 //strings
@@ -436,10 +409,7 @@ let myFreelanceBusiness: string = "Djvd Web Services";
 //more strings
 let nickName: string = "Vonney";
 let dogBreed: string = "Boxer";
-<<<<<<< HEAD
-=======
 let disneyShow: string = "Lizzie McGuire";
->>>>>>> b9a0ac5 (lets go: working on typescript)
 let secondNickName: string = "Davonneizzle";
 
 console.log("My Gamer Tag:", secondNickName);
@@ -481,8 +451,6 @@ console.log("My Gamer Tag:", secondNickName);
   null - on purpose, set to nothing 
   bigint
 
-<<<<<<< HEAD
-=======
   string 
   number 
   boolean 
@@ -499,7 +467,6 @@ console.log("My Gamer Tag:", secondNickName);
   null
   bigInt
 
->>>>>>> b9a0ac5 (lets go: working on typescript)
 */
 
 //Creating a custom type
@@ -553,14 +520,6 @@ console.log(
 
 //another one
 
-<<<<<<< HEAD
-=======
-export type OurStuff = {
-  clothing: string;
-  viola: true;
-};
-
->>>>>>> b9a0ac5 (lets go: working on typescript)
 //define the shape of product data
 export type OurProduct = {
   id: number;
@@ -803,7 +762,7 @@ function purchaseCar(car: Car) {
   console.log(`I have a ${car.brand} from ${car.year}`);
 }
 
-purchaseCar({ brand: "Nissan", year: 1992, isStickShift: true }); //throws an error if it does not include all the properties, unless the property is optional
+purchaseCar({ brand: "Cadilla", year: 1992, isStickShift: false }); //throws an error if it does not include all the properties, unless the property is optional
 purchaseCar({ brand: "Mustang", year: 1950, isStickShift: true });
 
 //interfaces can be extended like inheritance
@@ -943,8 +902,6 @@ const firstBoolean = getFirst([true, false]); // T is a boolean
 
 //
 
-<<<<<<< HEAD
-=======
 function createHelloWorld2(name: string) {
   return function (): string {
     return `Hello ${name} its a whole new world`;
@@ -961,7 +918,6 @@ function rembers the name variable even after createHelloWorld2 has finished run
 
 */
 
->>>>>>> b9a0ac5 (lets go: working on typescript)
 /*
 
   Write a function called isGreater that takes two 
@@ -969,12 +925,3 @@ function rembers the name variable even after createHelloWorld2 has finished run
   than the second number, and false other wise.
 
 */
-<<<<<<< HEAD
-
-function createHelloWorld2() {
-  return function (): string {
-    return "Hello World";
-  };
-}
-=======
->>>>>>> b9a0ac5 (lets go: working on typescript)
